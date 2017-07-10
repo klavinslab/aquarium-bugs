@@ -1,6 +1,6 @@
-= Aquarium Bug Reports and Feature Requests =
+# Aquarium Bug Reports and Feature Requests
 
-== Bug Reports ==
+## Bug Reports
 
 
 Your goal in submitting a bug report is to get the bug fixed. This means giving the developers a concise description of the bug and a way to reproduce it. Bug reports are not complaints or requests for new functionality. Rather, they describe a way in which the software does not behave as intended. Here are some specific issues to consider.
@@ -17,7 +17,7 @@ Write minimum reproducible code. If a 300 line protocol does not work, please do
 
 Be polite. Remember that the bug you are reporting is a byproduct of a feature that was lovingly coded by a real human who's goal is to make nice softare for you to use every day.
 
-== Feature Requests ==
+## Feature Requests
 
 Feature requests can be helpful to the programming team in certain cases. The most useful are ones that describe a way in which the user experience or functionality of the software could be improved in a way that is consistent with the direction the software development is already going. User interface improvements, for example, are helpful, especially when you notice a user going back and forth a lot imn the UI, getting lost in the UI, or writing things down on paper that the software should be keeping track of. Core functionality feature requests can sometimes be helpful or sometimes be so far afield from what the software does that it is more of a pie-in-the-sky request. Worse is a feature request that is essentially impossible to address, like: "the software should use a graph database instead of MySQL". Feature requests requiring rework of core architecture decisions are rarely helpful. Here are some specific issues to consider.
 
