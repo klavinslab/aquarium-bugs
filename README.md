@@ -15,7 +15,7 @@ Explain exactly how to reproduce the bug. For example, if a button doesn't work,
 
 Write minimum reproducible code. If a 300 line protocol does not work, please don't report a bug that says: Protocol such and such crashes with a runtime error at line 89. Instead, write a new protocol in which you remove everything from the protocol except the lines that illustrate the bug. Such a protocol is a "minrep" and can sometimes be as few as five lines long. Point the programming team to that minrep in your bug report and say what the code should do and what it actually does.
 
-Be polite. Remember that the bug you are reporting is a byproduct of a feature that was lovingly coded by a real human who's goal is to make nice softare for you to use every day.
+Be polite. Remember that the bug you are reporting is a byproduct of a feature that was lovingly coded by a real human whose goal is to make nice software for you to use every day.
 
 ## Feature Requests
 
@@ -23,8 +23,8 @@ Feature requests can be helpful to the programming team in certain cases. The mo
 
 Describe the feature succinctly and explain who it would help and why. Describe what users do to work around the lack of the feature.
 
-Ask yourself if there could be more than one way to implement the feature. Allow the developers to use their intimate knowledge of the osftware to address your feature request, possibly in a completely different way than you envisioned. That is, stick to what functionality you want to see and not a specifc implementation of that functionality.
+Ask yourself if there could be more than one way to implement the feature. Allow the developers to use their intimate knowledge of the software to address your feature request, possibly in a completely different way than you envisioned. That is, stick to what functionality you want to see and not a specifc implementation of that functionality.
 
 Consider talking directly to the developers about your feature request. They often have long term plans for the software and your feature may either be addressed or obviated by a future release. In this case, you may want to become a beta tester for the new release and submit feature requests to that release.
 
-Be polite. Remember that the feature you are requesting by definition exposes a way in which the software is problematic. Remember to phrase requests as requests not demands. Say "It would be nice if ..." as opposed to "The software should ...". Both get your message accross, but that former is much more likley to get a response from the developers.
+Be polite. Remember that the feature you are requesting by definition exposes a way in which the software is problematic. Remember to phrase requests as requests not demands. Say "It would be nice if ..." as opposed to "The software should ...". Both get your message accross, but the former is much more likley to get a response from the developers.
