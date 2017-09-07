@@ -1,30 +1,34 @@
-# Aquarium Bug Reports and Feature Requests
+# Aquarium Issues
 
-## Bug Reports
+This repository is used to manage the issues for the Aquarium software used in the [UW Biofab](http://www.uwbiofab.org).
 
 
-Your goal in submitting a bug report is to get the bug fixed. This means giving the developers a concise description of the bug and a way to reproduce it. Bug reports are not complaints or requests for new functionality. Rather, they describe a way in which the software does not behave as intended. Here are some specific issues to consider.
+Issues reported here should include
+- protocol bugs,
+- (Aquarium) bugs, or
+- feature requests.
 
-List only one bug per report. Do not submit a report that is a bullet list of issues. If you find yourself making a list, just submit each part of the list as a separate bug.
+If you want a new protocol, please talk with a BIOFAB lab manager.
+When writing an issue, edit the template to include only the relevant part for the type of issue.
 
-Tag the bug as "Critical" if it is holding back a significant number of users and there is no work around. Otherwise, just tag it as a bug. Note that the developers may downgrade or upgrade the criticality of the bug after you submit it.
 
-Be clear and concise. If the developers do not understand your report, your report may be ignored or rejected.
+For Aquarium bugs and feature requests, reports should identify the affected users.
+Possibilities include *Researchers*, *Lab Managers*, *Technicians*, *Protocol Developers*, and *Administrators*.
 
-Explain exactly how to reproduce the bug. For example, if a button doesn't work, then say which button it is, what page it is one, what state the UI is in when the button can be observed not to work (if that matters), etc.
 
-Write minimum reproducible code. If a 300 line protocol does not work, please don't report a bug that says: Protocol such and such crashes with a runtime error at line 89. Instead, write a new protocol in which you remove everything from the protocol except the lines that illustrate the bug. Such a protocol is a "minrep" and can sometimes be as few as five lines long. Point the programming team to that minrep in your bug report and say what the code should do and what it actually does.
+For feature requests, we want to use user stories to describe new features.
+A *user-story* is a way that software behavior is described at a high level from the user perspective.
+Each user story is a statement of *who* is affected, *what* task or action they want to be able to do, and *why* they want to do it.
+An example user story is
+> As a Lab Manager, I need to assign a job to a Technician so that the job is completed.
 
-Be polite. Remember that the bug you are reporting is a byproduct of a feature that was lovingly coded by a real human whose goal is to make nice software for you to use every day.
+or
+> As a Protocol Developer, I need to be able to save my editor preferences so that I don't need to change them each time I start an editing session.
 
-## Feature Requests
+Each story represents a [conversation](http://ronjeffries.com/xprog/articles/expcardconversationconfirmation/) that needs to occur, so do your best to adhere to the form while expecting that we will ask for more detail.
 
-Feature requests can be helpful to the programming team in certain cases. The most useful are ones that describe a way in which the user experience or functionality of the software could be improved in a way that is consistent with the direction the software development is already going. User interface improvements, for example, are helpful, especially when you notice a user going back and forth a lot imn the UI, getting lost in the UI, or writing things down on paper that the software should be keeping track of. Core functionality feature requests can sometimes be helpful or sometimes be so far afield from what the software does that it is more of a pie-in-the-sky request. Worse is a feature request that is essentially impossible to address, like: "the software should use a graph database instead of MySQL". Feature requests requiring rework of core architecture decisions are rarely helpful. Here are some specific issues to consider.
 
-Describe the feature succinctly and explain who it would help and why. Describe what users do to work around the lack of the feature.
+Feel free to modify the templates and make a pull-request so that we can review changes.
 
-Ask yourself if there could be more than one way to implement the feature. Allow the developers to use their intimate knowledge of the software to address your feature request, possibly in a completely different way than you envisioned. That is, stick to what functionality you want to see and not a specifc implementation of that functionality.
 
-Consider talking directly to the developers about your feature request. They often have long term plans for the software and your feature may either be addressed or obviated by a future release. In this case, you may want to become a beta tester for the new release and submit feature requests to that release.
-
-Be polite. Remember that the feature you are requesting by definition exposes a way in which the software is problematic. Remember to phrase requests as requests not demands. Say "It would be nice if ..." as opposed to "The software should ...". Both get your message accross, but the former is much more likley to get a response from the developers.
+Please be sure to adhere to the [Code of Conduct](CODE_OF_CONDUCT.md).
