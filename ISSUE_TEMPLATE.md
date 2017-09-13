@@ -1,0 +1,29 @@
+<!-- Choose the section for the issue type below, and delete the rest -->
+
+## Protocol bug
+
+<!-- Give operation name and basic description in issue title -->
+
+- **Operation name:** *replace with operation name*
+- **Expected:** *replace with description of expected behavior*
+- **Actual:** *replace with description of actual behavior*
+- **Link:** *link to page demonstrating error*
+
+
+## Bug report
+
+<!-- Give affected user and basic description in issue title -->
+
+- **Reproduce by:** *Replace with minimal steps to reproduce*
+- **Expected:** *replace with expected behavior*.
+- **Actual:** *replace with description of actual behavior*
+- **Acceptance criteria:** *how do we determine when the bug is fixed*
+
+
+## Feature request
+
+<!-- Write your feature as a user-story by replacing user-type, task and goal -->
+
+**User story:** As a *user-type*, I want to *task* so that *goal*
+
+<!-- Copy user-story into issue title -->
