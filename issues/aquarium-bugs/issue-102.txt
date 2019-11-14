@@ -1,0 +1,7 @@
+#102 When sample in inventory is expanded, sample is no longer a link
+By dyounger on 2017-08-07 16:10:36 UTC
+Labels: #<Sawyer::Resource:0x00005609f7fc3210> #<Sawyer::Resource:0x00005609f7fc02b8>
+
+When a sample is not expanded, the sample name text is a link to a page that gives all of the sample information. When the sample is expanded, that link is no longer there.
+
+Comments: 0

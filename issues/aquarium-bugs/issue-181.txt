@@ -1,0 +1,12 @@
+#181 As a workflow developer, I want the selected developer tab to persist between protocols so that I do not have to reselect the tab
+By Gamemackerel on 2017-09-06 16:33:48 UTC
+Labels: #<Sawyer::Resource:0x0000555880e19af0> #<Sawyer::Resource:0x0000555880e18600>
+
+When switching between protocols, keep the current tab rather than default back to the Def tab. This way a developer can leaf through to quickly compare the code, pre, or cost of multiple protocols.
+
+Comments: 1
+--------
+From bjkeller on 2017-09-08 23:21:45 UTC
+
+Does this duplicate #138?
+

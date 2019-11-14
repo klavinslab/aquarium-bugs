@@ -1,0 +1,7 @@
+#5 Need to distinguish between inventory item types and items 
+By dvnstrcklnd on 2017-07-11 23:38:56 UTC
+Labels: #<Sawyer::Resource:0x0000556b82b1b988> #<Sawyer::Resource:0x0000556b82b45580> #<Sawyer::Resource:0x0000556b82b54e40>
+
+In Inventory -> new, it is a bit confusing to enter something as an inventory item when it doesn't exist yet. Is it possible to flag them as specifications rather than things already in inventory?
+
+Comments: 0

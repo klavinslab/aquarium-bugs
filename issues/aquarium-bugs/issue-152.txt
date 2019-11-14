@@ -1,0 +1,9 @@
+#152 Upload Sequencing Results is not associating trace files with plans
+By shalabiya on 2017-08-22 15:16:20 UTC
+Labels: #<Sawyer::Resource:0x0000555880d8dcf8>
+
+Upload sequencing is not associating trace files with plans when batched together. it is only uploading/associating zip files.  
+
+http://52.27.43.242/krill/log?job=43853
+
+Comments: 0

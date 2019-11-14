@@ -1,0 +1,44 @@
+#239 Planner GUI: Some bad templates are not removable.
+By Gamemackerel on 2017-09-19 19:28:28 UTC
+Labels: #<Sawyer::Resource:0x00005577efd89570> #<Sawyer::Resource:0x00005577efd9aaa0>
+
+The system template 47755 is a plan that was made by me (abemill). It loads fine, except for Make glycerol stock, which is is glitched from having its definition updated since it was placed there. 
+But when I click the revert to plan button, it gives the pop-up "Do you really want to revert this template to a normal plan?" and then after I say "yes" the template does not revert.
+
+I think it is having trouble because of the old glitched operation inside.
+Eric, if you could manually remove this template, that would be appreciated.
+It is unfortunate that the plans which are the most broken are the hardest to remove!
+
+Comments: 4
+--------
+From klavins on 2017-09-19 23:22:02 UTC
+
+Should I just remove the whole template? That's easier than trying to edit the template from the command line.
+
+--------
+From Gamemackerel on 2017-09-19 23:22:42 UTC
+
+Yes please!
+
+From: Eric Klavins
+Sent: Tuesday, September 19, 2017 4:22 PM
+To: klavinslab/aquarium-bugs
+Cc: Abraham Miller; Author
+Subject: Re: [klavinslab/aquarium-bugs] Planner GUI: Some bad templates arenot removable. (#239)
+
+Should I just remove the whole template? That's easier than trying to edit the template from the command line.
+—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub, or mute the thread.
+
+
+--------
+From klavins on 2017-09-19 23:24:04 UTC
+
+Ok, I reverted it.
+
+--------
+From emernic on 2018-02-20 18:03:41 UTC
+
+We are having a related issue. We have an old system template which consists of 1 operation type. This operations type has been deleted. When we attempt to revert the template, we get a dialog saying that the operation is being skipped because it is not deployed, and the template doesn't revert. If we could get some instructions on reverting this from the command line, that would be much appreciated! @klavins 
+

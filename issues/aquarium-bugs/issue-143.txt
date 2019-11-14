@@ -1,0 +1,12 @@
+#143 No way to make a primer aliquot through a plan
+By dyounger on 2017-08-16 17:30:34 UTC
+Labels: #<Sawyer::Resource:0x0000555880755980> #<Sawyer::Resource:0x0000555880772198>
+
+Since the rehydrate primer protocol takes a lyophilized primer and makes a stock and an aliquot, it seems as though there is no way to just make a new aliquot from a stock when an aliquot runs out. I am trying to submit a sequencing plan and I can't use one of my primers because of this and will have to manually make an aliquot in order to submit the plan. The same problem would come up for PCRs.
+
+Comments: 1
+--------
+From Gamemackerel on 2017-09-26 18:04:15 UTC
+
+"Make Primer Aliquot from Stock" operation is up and running. Give it a try!
+

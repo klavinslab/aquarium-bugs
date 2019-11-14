@@ -1,0 +1,22 @@
+#216 As a Research, I want to be able to select different object types for each element in an input array
+By jvrana on 2017-09-14 22:19:27 UTC
+Labels: #<Sawyer::Resource:0x0000556c505bb280> #<Sawyer::Resource:0x0000556c505b8c88>
+
+Currently, all object types in each element in an input array are always same in the planner. 
+![sep-14-2017 15-18-46](https://user-images.githubusercontent.com/10437900/30458371-0f9e0f88-9960-11e7-8d4b-f0bc815360ce.gif)
+
+
+For example:
+   I may want to submit a golden gate with:
+      Backbone (a Plasmid Stock)
+      Insert 1 (a Plasmid Stock)
+      Insert 2 (a Fragment Stock)
+      Insert 3 (an Unverified Plasmid Stock)
+
+   For transfections, I often want things like this to be submitted:
+      Plasmid 1 (a Plasmid Stock)
+      Plasmid 2 (a Maxiprep Stock)
+      Plasmid 3 (a Midiprep Stock
+      Plasmid 4 (an Unverifed Plasmid Stock)
+
+Comments: 0

@@ -1,0 +1,17 @@
+#117 Graphical Planner: Output node circle does not always change to green when it should
+By Gamemackerel on 2017-08-08 21:00:50 UTC
+Labels: #<Sawyer::Resource:0x00005609f86c76b0> #<Sawyer::Resource:0x00005609f86c61c0>
+
+On the left: I filled in the 'in' box with a sample available in the inventory
+On the right: I filled in the 'out' box with the same sample 
+
+Either way, the operation seems to chain correctly to others, just a small visual issue.
+This is with all operation types, not just miniprep.
+![capture](https://user-images.githubusercontent.com/3107677/29094394-06db3f00-7c42-11e7-8355-2fefd7d5a3db.PNG)
+
+Comments: 1
+--------
+From klavins on 2017-09-19 23:25:38 UTC
+
+I think this should be fixed. Please check.
+

@@ -1,0 +1,7 @@
+#161 As a Protocol Developer I would like the Ace Editor default indent size to be 2 spaces so that it matches ruby code style conventions
+By parkersruth on 2017-08-25 04:01:52 UTC
+Labels: #<Sawyer::Resource:0x00005558806a5c60> #<Sawyer::Resource:0x00005558806bab38>
+
+Since the standard ruby indentation level is 2 spaces, the default Ace editor indent size should be set to 2 spaces.
+
+Comments: 0

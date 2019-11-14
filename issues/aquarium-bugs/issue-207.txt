@@ -1,0 +1,18 @@
+#207 minor Planner GUI glitch: templates are not added to plan in a pleasant way
+By Gamemackerel on 2017-09-13 18:41:25 UTC
+Labels: #<Sawyer::Resource:0x0000556c5066d980> #<Sawyer::Resource:0x0000556c50677d90>
+
+When I add 4 operations to the plan one right after the other, they are automatically spaced apart like so:
+![4 operations](https://user-images.githubusercontent.com/3107677/30394440-f0169ec0-9877-11e7-89c5-39126ff49151.PNG)
+
+But If I add 4 templates, they stack on top of each other. If it is the same template, then you can't even tell how many there are, and it is difficult to extricate the templates. This is 4 of the same template added consecutively:
+![4 ops1](https://user-images.githubusercontent.com/3107677/30394604-6961d39e-9878-11e7-8b2d-e03e2ce7551b.PNG)
+
+
+
+Comments: 1
+--------
+From klavins on 2017-09-13 19:30:03 UTC
+
+Fixed. Although the new template may overlap the old one, you'll at least see it as different. And it will be selected to you can immediately move it.
+

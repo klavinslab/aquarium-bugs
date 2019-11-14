@@ -1,0 +1,7 @@
+#194 As a protocol developer, I want documentation of protocol functions and idioms so that I can write protocols more quickly
+By bjkeller on 2017-09-12 19:45:13 UTC
+Labels: #<Sawyer::Resource:0x0000556c50a8bf08>
+
+
+
+Comments: 0

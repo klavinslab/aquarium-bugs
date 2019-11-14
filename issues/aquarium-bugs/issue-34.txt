@@ -1,0 +1,7 @@
+#34 Operation success rates include canceled jobs as errors
+By klavins on 2017-07-15 15:11:38 UTC
+Labels: #<Sawyer::Resource:0x0000556b831d51c0> #<Sawyer::Resource:0x0000556b831e3c70> #<Sawyer::Resource:0x0000556b831e2780>
+
+This unfairly shows the operation success rate as worse than it really is.
+
+Comments: 0

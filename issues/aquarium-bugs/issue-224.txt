@@ -1,0 +1,40 @@
+#224 Propagation of input into multiple operations doesn't work in modules 
+By ayeshasal on 2017-09-15 22:06:22 UTC
+Labels: #<Sawyer::Resource:0x0000556c50703b10> #<Sawyer::Resource:0x0000556c50702620>
+
+- **Reproduce by:** creating a module with one input linked to two different operations, e.g., link the input of module "Yeast QC" (which i saved as a system-wide template) to two "Yeast Lysate" operations and then input a sample id
+- **Expected:** the sample should propagate into both yeast lysate operations
+- **Actual:** it doesn't -- one set of protocols is filled out, but the other isn't 
+- **Acceptance criteria:** when everything is filled out correctly, i.e., the inputs/outputs of all the operations within the module have been filled out with the correct sample ids 
+
+Comments: 5
+--------
+From klavins on 2017-09-18 22:04:03 UTC
+
+Ok, I have added this as a special case of propagation. Hopefully I didn't break anything in the process. The fix gets right into the heart of the propagation code.
+
+--------
+From ayeshasal on 2017-09-18 22:18:11 UTC
+
+awesome! i'll test it out and let you know if it works. 
+
+--------
+From ayeshasal on 2017-09-18 23:11:48 UTC
+
+i'm still having this issue. inside the module, this is in the left set of protocols: 
+![yeast_lysate_one](https://user-images.githubusercontent.com/17604778/30568746-cc3d2952-9c8b-11e7-84d0-9efdc95a5a4d.png)
+and this is in the right set of protocols: 
+![lysate_2](https://user-images.githubusercontent.com/17604778/30568784-055da626-9c8c-11e7-9995-293b856572e8.png)
+
+the input for the entire module is sample id 16666
+
+--------
+From klavins on 2017-09-19 16:30:12 UTC
+
+I am not sure I know what you mean by left and right set of protocols. Can you just save a plan your "Your Plans" and tell me which one it is and how to break it?
+
+--------
+From klavins on 2017-09-19 23:24:35 UTC
+
+Is this still a problem?
+

@@ -1,0 +1,11 @@
+#140 As a Protocol Developer I would like to have a convention for routing with input/output arrays to avoid illegal combinations and complicated definition of outputs
+By jvrana on 2017-08-15 20:22:03 UTC
+Labels: #<Sawyer::Resource:0x0000555880d09e30> #<Sawyer::Resource:0x0000555880d13750>
+
+There is currently no convention for input/output array routing. I would like some convention for disallowing the following input (where multiple Lentivirus Harvests are combined into a single bigger harvest). In this case, two different Lentiviruses ("GFP LV" and "Citrine LV") are combined into another type, which shouldn't happen.
+
+<img width="213" alt="screen shot 2017-08-15 at 1 18 07 pm" src="https://user-images.githubusercontent.com/10437900/29334474-5cd2444c-81bc-11e7-8afa-34f23da92d03.png"> 
+
+This would also be nice for output array, in which you want the outputs to all be the sample sample without having to click and type each sample.
+
+Comments: 0

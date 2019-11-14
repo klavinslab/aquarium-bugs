@@ -1,0 +1,17 @@
+#36 Precondition code is very difficult to debug
+By jvrana on 2017-07-15 22:27:24 UTC
+Labels: #<Sawyer::Resource:0x0000556b831ba640> #<Sawyer::Resource:0x0000556b831b9150>
+
+It would be nice to have the precondition errors show up in the testing of the developer. Currently we only get:
+```
+Error
+One or more preconditions could not be evaluated.
+```
+Which makes it difficult to debug the code.
+
+Comments: 1
+--------
+From klavins on 2017-07-23 23:54:44 UTC
+
+You also get a debug message as a data association in the plan or the operation, I believe. Does that help?
+

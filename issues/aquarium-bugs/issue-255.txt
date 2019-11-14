@@ -1,0 +1,28 @@
+#255 Protocol Library: As a protocol developer I want to be able to create a data association for the elements of a collection
+By bjkeller on 2017-09-29 20:25:13 UTC
+Labels: #<Sawyer::Resource:0x00005577efe5d578> #<Sawyer::Resource:0x00005577efe5c088>
+
+**User story:** As a *protocol developer*, I want to *create a data association for the elements of a collection* so that *the relationship with data files is maintained*
+
+
+
+Comments: 3
+--------
+From bjkeller on 2017-09-29 20:37:03 UTC
+
+Create a method to fake a data associations for the elements of a collection. The method should associate the data with the collection, and then add as a data association to the collection a map from each element to the associated data.
+
+Add this method to a standard lib module `DataAssociator`, which may need to be created.
+
+We should have a discussion whether we need methods to access the data association for an element within a protocol.
+
+--------
+From emernic on 2018-02-25 17:04:17 UTC
+
+@bjkeller I am curious what the state of this is or whether it might be implemented soon. We (DAMP Lab at BU) are going to be writing protocols that interface with pipetting robots soon (lots of collections involved), but I might hold off on creating a workaround if there is going to be a built-in way of doing something like this.
+
+--------
+From bjkeller on 2018-02-25 20:13:25 UTC
+
+We have a protocol library that supports this and are just starting to integrate it into our protocols, but it won't be "built-in" immediately.
+

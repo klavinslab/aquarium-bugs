@@ -1,0 +1,17 @@
+#271 As a developer, I would like inputs for protocols to be in the 'sample_container category' in Containers
+By farheensal99 on 2017-11-21 19:59:30 UTC
+
+
+
+## If inputs 
+
+![screenshot 2017-11-21 at 11 55 43 am](https://user-images.githubusercontent.com/32073154/33093815-eff9b366-ceb2-11e7-9c1d-3ed6af3955e2.png)
+
+## aren't in the sample_container category in Containers here:
+
+![screenshot 2017-11-21 at 11 55 03 am](https://user-images.githubusercontent.com/32073154/33093784-d64a8f6c-ceb2-11e7-9685-c7c335712da7.png)
+
+## protocols don't pick them up. 
+
+
+Comments: 0

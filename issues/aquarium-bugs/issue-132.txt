@@ -1,0 +1,9 @@
+#132 Annotate Graphical Plans
+By jvrana on 2017-08-11 23:34:22 UTC
+Labels: #<Sawyer::Resource:0x00005609f85c3f48> #<Sawyer::Resource:0x00005609f85c2968> #<Sawyer::Resource:0x00005609f85c1478>
+
+It would be nice to be able to annotate graphical plans with text or arrows. This may become relevant when Plan Templates become an established thing and we can share Plan Templates among users.
+
+If we could send Plan Templates to each other, it'd be nice if we could annotate why we were doing something a certain way. A simple screen shot and it could go in an email or in your online notebook to designate experiments or experimental plans.
+
+Comments: 0

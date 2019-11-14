@@ -1,0 +1,12 @@
+#195 As a Researcher, I want to be able to generate PDF for an invoice
+By bjkeller on 2017-09-12 20:00:34 UTC
+Labels: #<Sawyer::Resource:0x0000556c50a44360> #<Sawyer::Resource:0x0000556c50a4ee28>
+
+I understand that this was capability in Aq.1 that was lost in switch.
+
+Comments: 1
+--------
+From bjkeller on 2017-09-20 18:03:49 UTC
+
+@klavins You were working on this, did you make any progress?
+

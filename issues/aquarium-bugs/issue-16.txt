@@ -1,0 +1,14 @@
+#16 As a researcher, I want the choice for  sequencing ok in the planner view to be a dropdown so that I can avoid giving bad input
+By klavins on 2017-07-14 17:18:47 UTC
+Labels: #<Sawyer::Resource:0x0000556b8295cc50> #<Sawyer::Resource:0x0000556b8297e210>
+
+This would prevent users from accidentally typing Yes, or yesss, no!!!!
+
+Comments: 1
+--------
+From gasnew on 2017-07-14 17:23:16 UTC
+
+That would be great!
+
+For now, it just checks to see if "yes", "no", or "resequence" is included in the answer, so your examples would be interpreted correctly.
+

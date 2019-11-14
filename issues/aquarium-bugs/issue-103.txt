@@ -1,0 +1,12 @@
+#103 Select number of colonies for yeast QC and sequencing
+By dyounger on 2017-08-07 16:12:16 UTC
+Labels: #<Sawyer::Resource:0x00005609f7e943f8>
+
+It should be possible to select the number of colonies to pick for yeast QC or for sequencing from an E.coli transformation plate. The default for yeast QC used to be 2, but now only one is done with a standard plan.
+
+Comments: 1
+--------
+From bjkeller on 2017-09-08 23:36:50 UTC
+
+@ayeshasal if you are working on this, please assign the issue to yourself
+

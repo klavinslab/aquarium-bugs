@@ -1,0 +1,12 @@
+#158 No "make antibiotic plate" protocol
+By cpc3 on 2017-08-24 00:26:49 UTC
+Labels: #<Sawyer::Resource:0x0000555880c83f88>
+
+When there is an antibiotic plate required for a yeast transformation an overnight is made, but there's no protocol where the actual antibiotic plate gets made. 
+
+Comments: 1
+--------
+From Gamemackerel on 2017-09-26 22:06:51 UTC
+
+Protocol now exists, but in order for it to be useful to the yeast workflow, Plasmid Digest+Yeast transform may need to be split into two separate protocols. Yeast transform could then have a prereq that waits until the required antibiotic plates are available
+

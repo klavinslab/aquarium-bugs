@@ -1,0 +1,7 @@
+#241 as a workflow developer, i would really like the ability to be able to export plans from nursery to production to make templates/modules
+By ayeshasal on 2017-09-19 22:46:34 UTC
+
+
+the ability to export/import plans (like with operations) would be really nice to have. being able to export a bunch of templates from nursery to production or being able to export my plan(s) with a couple of users without making them system-wide templates would be useful. this would prevent system-wide templates from getting too cluttered (even if we do have folders/categories for plans, which, hopefully in the future, we will) and would make pushing templates/modules to production much easier. 
+
+Comments: 0

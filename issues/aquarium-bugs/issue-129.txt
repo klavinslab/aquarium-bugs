@@ -1,0 +1,11 @@
+#129 Support for autofilling input arrays
+By jvrana on 2017-08-11 18:51:39 UTC
+Labels: #<Sawyer::Resource:0x00005609f8657478> #<Sawyer::Resource:0x00005609f8655f88>
+
+Sample type definitions can have an array of samples as a field. However, in the planner, autofilling sample inputs for arrays is not yet supported. Currently, the planner will autofill only last sample in the field array of the sample type definition. I think the desired functionality would be that it automatically creates an input array for the operation of equal size as the array defined in the sample definition.
+
+This pops up in a few cases in the mammalian cell workflow:
+- In transfections, where a Cell Line has an array of transfected plasmids in the sample definition as an array
+- Tissue Culture Media bottle where "Reagents" are defined in the sample definition of the "Tissue Culture Media" as an sample array
+
+Comments: 0

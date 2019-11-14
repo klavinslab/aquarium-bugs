@@ -1,0 +1,21 @@
+#179 As a Researcher I want a CSV template for creating input for new sample types so that I know the proper file format
+By dvnstrcklnd on 2017-09-06 16:11:39 UTC
+Labels: #<Sawyer::Resource:0x0000555880e6b198> #<Sawyer::Resource:0x0000555880e69ca8>
+
+IWBNI there was a button to download a properly formatted csv template for each sample type. The manual entry is pretty error prone and I believe that we should make it as easy as possible for users to upload using csv.
+
+Comments: 2
+--------
+From bjkeller on 2017-09-07 22:02:48 UTC
+
+If I'm understanding, this has two parts:
+- a template for users to complete
+- an ability for users to upload the completed template
+
+Is that correct?
+
+--------
+From dvnstrcklnd on 2017-09-07 22:14:27 UTC
+
+The second is already implemented. As a user, it not obvious what a properly-formatted file looks like.
+

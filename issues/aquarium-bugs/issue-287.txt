@@ -1,0 +1,11 @@
+#287 Critical Bug: Selecting multiple choices from a dropdown does not work in new tech view
+By emernic on 2018-03-12 21:23:58 UTC
+
+## Bug report
+
+- **Reproduce by:** *select ["choice 1", "choice 2"], var: "choice", label: "Pick choice 1 and/or 2", multiple: true, default: 0*
+- **Expected:** *Creates a dropdown where technician can select multiple options*
+- **Actual:** *Only one option can be selected at once*
+- **Acceptance criteria:** *Creates a dropdown where technician can select multiple options*
+
+Comments: 0

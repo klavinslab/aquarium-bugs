@@ -1,0 +1,10 @@
+#115 Graphical Planner: horizontal scrollbar on chrome
+By Gamemackerel on 2017-08-08 19:07:38 UTC
+Labels: #<Sawyer::Resource:0x00005609f86e6218> #<Sawyer::Resource:0x00005609f86e4d28> #<Sawyer::Resource:0x00005609f86f3800> #<Sawyer::Resource:0x00005609f86f2310> #<Sawyer::Resource:0x00005609f86f0e20>
+
+Unwanted horizontal scrollbar appears by default
+Google chrome Version 60.0.3112.90 on Windows 10, no zooming applied.
+
+![capture](https://user-images.githubusercontent.com/3107677/29089655-d03a8b00-7c31-11e7-8a95-28ab871bd7f4.PNG)
+
+Comments: 0

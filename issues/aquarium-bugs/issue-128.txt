@@ -1,0 +1,8 @@
+#128 It would be nice if the planner grid were twice as granular
+By gasnew on 2017-08-11 04:15:25 UTC
+Labels: #<Sawyer::Resource:0x00005609f8679ff0> #<Sawyer::Resource:0x00005609f8678b00>
+
+... so that I could line up inputs and outputs of differing numerical parity.
+![planogrido](https://user-images.githubusercontent.com/14169359/29201183-ea68bd5e-7e10-11e7-8eb5-7f523e56ef8a.png)
+
+Comments: 0

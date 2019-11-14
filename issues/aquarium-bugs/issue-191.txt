@@ -1,0 +1,19 @@
+#191 Tables from arrays of items
+By dvnstrcklnd on 2017-09-08 16:00:30 UTC
+Labels: #<Sawyer::Resource:0x0000556c50abd008> #<Sawyer::Resource:0x0000556c50acbab8>
+
+As a workflow developer, it would be nice if I could make richly-functional tables on arrays of `items` (and possibly other objects). For example, it is frequently the case that an array of n `operations` has << n unique `items` of a given type. Yet these `items` are often the subject of critical procedures where user input must be gathered and associated with the `item`. 
+
+In talking with Garrett and Abe, it seems that the most convenient way to do this is 
+```ruby
+my_unique_operations = operations.uniq { |op| op.input(MY_ITEM_HANDLE).item }.extend(OperationList) 
+```
+and then build a table on `my_unique_operations`. If user input is associated with these `operations`, it needs to be moved from the pseudo-unique `operations` to the unique `items` in a second step. This is difficult to read and to maintain.
+
+In my opinion, it would be better to be able to do 
+```ruby
+my_unique_items = operations.map { |op| op.input(MY_ITEM_HANDLE).item }.uniq
+```
+and build a table on `my_unique_items` in which one could conveniently access the `item`'s associations.
+
+Comments: 0

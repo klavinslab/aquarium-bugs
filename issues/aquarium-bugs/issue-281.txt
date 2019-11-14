@@ -1,0 +1,20 @@
+#281 Bug: Changes to operation type descriptions are not appearing in planner
+By emernic on 2018-02-26 12:55:44 UTC
+
+## Bug report
+
+- **Reproduce by:** Making a change to the description of an operation type in Developer mode and click Save. Go to Planner and attempt to view the operation type description.
+- **Expected:** Changes are reflected in updated operation type definition as viewed in planner.
+- **Actual:** Operation type definition remains unchanged. Also noticed that when clicking "Preview" in developer mode does not display changes; however, the changes *are* visible by clicking  Preview->Edit->Preview.
+- **Acceptance criteria:** Changes to operation type definitions are visible in planner.
+
+Update: This bug does not affect cost models (which are coded in a similar way) if that helps narrow it down.
+
+Comments: 1
+--------
+From emernic on 2018-03-09 01:32:19 UTC
+
+This appears to be partially fixed by commit 084be8bc7036a6bad65cfbe45986119ce933e43e . However, markdown is no longer working at all for descriptions (they display as plain text).
+
+Update: It appears that html formatting works, which is fine.
+

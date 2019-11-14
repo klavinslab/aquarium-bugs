@@ -1,0 +1,16 @@
+#269 Use universal primers for sequencing
+By dvnstrcklnd on 2017-11-07 23:57:59 UTC
+Labels: #<Sawyer::Resource:0x0000555c48e2b720>
+
+As a BIOFAB user, it would be nice if I could use GeneWiz's universal sequencing primers instead of having to use a primer that we have ordered and already have in the lab:
+
+https://www.genewiz.com/Public/Resources/Free-Universal-Primers
+
+Note that the primer doesn't have to be included in the sample that we send them. They add it.
+
+Comments: 1
+--------
+From dvnstrcklnd on 2017-11-08 00:03:16 UTC
+
+Actually, it appears that you can do this if you use e.g. primer 19086? Is that correct?
+

@@ -1,0 +1,7 @@
+#55 Planner does not use associated data to fill in transformation or QC tasks
+By wrightrc on 2017-07-21 18:33:09 UTC
+Labels: #<Sawyer::Resource:0x0000556b83122390> #<Sawyer::Resource:0x0000556b83120ea0>
+
+When transforming yeast plate type (antibiotic or dropout) must be manually specified by changing the type, and QC primers must be manually specified as well.
+
+Comments: 0

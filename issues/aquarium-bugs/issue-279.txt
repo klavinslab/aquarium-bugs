@@ -1,0 +1,12 @@
+#279 Feature request: object_types method for array inputs
+By emernic on 2018-02-22 07:46:16 UTC
+
+## Feature request
+
+<!-- Write your feature as a user-story by replacing user-type, task and goal -->
+
+**User story:** As a *protocol developer*, it would be convenient to be able to access a list of object types for array inputs using **op.input_array("Input Name").object_types**. This would maintain consistency with the other array input methods (which closely match the methods available for normal inputs except for the absence of an object_types method).
+
+<!-- Copy user-story into issue title -->
+
+Comments: 0

@@ -1,0 +1,13 @@
+#261 50 mL 0.8 Percent Agarose Gel in Gel Box for Extract Gel does not correctly display the r,c location of the users fragment
+By Gamemackerel on 2017-10-12 22:04:36 UTC
+Labels: #<Sawyer::Resource:0x00005577efd88288> #<Sawyer::Resource:0x00005577efd9ad48>
+
+## bug
+
+- **Operation name:** *Extract Gel*
+- **Expected:** *input item shows the row column location of the fragment next to the item id with 1-based indexing*
+- **Actual:** *input item shows the row column location of the fragment next to the item id with 0-based indexing, while the gel image plan association uses 1-based indexing. Contradictory, and confusing for users who don't understand 0-based indexing*
+![capture](https://user-images.githubusercontent.com/3107677/31521443-66fd2ae8-af5e-11e7-94e2-401e25b43a36.JPG)
+
+
+Comments: 0

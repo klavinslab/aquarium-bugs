@@ -1,0 +1,7 @@
+#21 As a Researcher, I want to be able to see the expected primer sequence so that (goal needed)
+By dvnstrcklnd on 2017-07-14 18:06:04 UTC
+Labels: #<Sawyer::Resource:0x0000556b8324fec0> #<Sawyer::Resource:0x0000556b8324e9d0>
+
+Dynamically updated as they are adding the annealing and overhang sequences.
+
+Comments: 0

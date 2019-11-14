@@ -1,0 +1,7 @@
+#86 IWBNI protocols could be switched in and out of "edit mode". 
+By dvnstrcklnd on 2017-08-04 16:15:28 UTC
+Labels: #<Sawyer::Resource:0x00005609f86555d8> #<Sawyer::Resource:0x00005609f8662558>
+
+I am finding it extremely difficult to open more than one developer window so that I can refer to other protocols without mixing them up with the one I am trying to edit. 
+
+Comments: 0

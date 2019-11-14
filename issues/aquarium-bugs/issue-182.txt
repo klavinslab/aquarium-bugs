@@ -1,0 +1,7 @@
+#182 As a workflow developer, I want the Test Tab and Protocol code could be both displayed on one page so that I can view both during debugging
+By Gamemackerel on 2017-09-06 16:36:29 UTC
+Labels: #<Sawyer::Resource:0x0000555880df6f78> #<Sawyer::Resource:0x0000555880df5a88>
+
+It would be nice to have an option to expand the test tab as a sidebar to allow for testing while looking at the code simultaneously.
+
+Comments: 0

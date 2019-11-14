@@ -1,0 +1,16 @@
+#83 It would be nice if operations that can never be run were set to "errored"
+By gasnew on 2017-08-03 16:51:54 UTC
+Labels: #<Sawyer::Resource:0x00005609f86e7a28> #<Sawyer::Resource:0x00005609f86e4cd8>
+
+For example, Make Overnight Suspension in [this plan](http://52.27.43.242:81/launcher?plan_id=24478) can never be moved to pending because its predecessor errored out.
+
+This isn't as simple as erroring all operations in the plan because there may be other goals that can still complete. Thus, I believe this "erroring" method should recurse through all successors to the errored operation.
+
+The main benefit of this enhancement would be to clean up the manager page.
+
+Comments: 1
+--------
+From wmvoje on 2017-08-03 17:51:47 UTC
+
+I agree with this seeing a plan as "error/erroring/errored" would be more clear than seeing "waiting" for operations that will never complete due to a step erroring. 
+

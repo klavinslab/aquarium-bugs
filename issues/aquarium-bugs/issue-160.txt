@@ -1,0 +1,7 @@
+#160 As a workflow developer, I would like Ace editor settings to be persistent to avoid having to reset them
+By parkersruth on 2017-08-25 04:00:24 UTC
+Labels: #<Sawyer::Resource:0x00005558807a3568> #<Sawyer::Resource:0x00005558807aacc8>
+
+It sure would be awfully nice for the developers if Aquarium stashed a cookie with Ace editor preferences for each user. :)
+
+Comments: 0

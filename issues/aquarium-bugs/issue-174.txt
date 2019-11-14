@@ -1,0 +1,14 @@
+#174 When a plasmid stock is made from a glycerol stock, it is "unverified"
+By dyounger on 2017-08-31 21:04:30 UTC
+Labels: #<Sawyer::Resource:0x000055588040eec0> #<Sawyer::Resource:0x000055588044fa60>
+
+It would be great if a new plasmid stock made from a validated glycerol stock would make a verified plasmid stock instead of an unverified one (this will hopefully be a non-issue with later updates, but it has come up a few times and I think it should be an easy fix.)
+
+Thanks!
+
+Comments: 1
+--------
+From gasnew on 2017-08-31 21:14:40 UTC
+
+Yep, this will be addressed very soon! This fix dovetails with fixes for #152, #142, #97, and #96 that will come very shortly after we get modules.
+

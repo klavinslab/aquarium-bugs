@@ -1,0 +1,7 @@
+#250 As a user, I would like to be able to use outputs from pending operations as inputs to a new operation
+By dvnstrcklnd on 2017-09-24 03:29:05 UTC
+Labels: #<Sawyer::Resource:0x00005577ef5bc720>
+
+I sometimes find that I want to get a workflow started (say, by ordering primers) but don't have time to finish planning the workflow. It seems like the output of a pending Rehydrate Primer protocol should be available as an input to a new Make PCR Fragment protocol, because that is essentially what is happening when you plan a new protocol anyway. It would be nice to have if it isn't too much trouble. 
+
+Comments: 0

@@ -1,0 +1,14 @@
+#288 Bug: When using the same template multiple times in a plan, nodes are sometimes erroneously linked
+By emernic on 2018-03-16 21:25:19 UTC
+
+## Bug report
+
+I am hesitant to submit this bug because I cannot pin down the exact conditions under which it occurs, but it is a very nasty bug when it pops up. Replanning the exact same plan can fix or reintroduce the bug.
+
+- **Reproduce by:** *Creating a plan that uses the same template multiple times (in my case, the template is a single module). Again, the bug only happens sporadically, so reproducibility may be a problem.*
+- **Expected:** *Inputs and outputs for different modules can be set independently.*
+- **Actual:** *Occasionally, the outputs of two or more modules are permanently linked (the only way to unlink them is to delete the affected modules and replan them). Setting the sample for one will change the sample of the other.*
+- **Acceptance criteria:** *Inputs and outputs for different modules can be set independently.*
+![strange sharing between modules](https://user-images.githubusercontent.com/11687588/37545316-d708969c-293e-11e8-8c03-0767219fe2fe.png)
+
+Comments: 0

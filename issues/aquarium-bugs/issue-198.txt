@@ -1,0 +1,12 @@
+#198 Current planner should not allow cycles yet
+By bjkeller on 2017-09-12 20:19:49 UTC
+Labels: #<Sawyer::Resource:0x0000556c509a4b58> #<Sawyer::Resource:0x0000556c509b7618>
+
+Eventually cycles will be allowed but currently not.
+
+Comments: 1
+--------
+From klavins on 2017-09-15 15:55:30 UTC
+
+Please check that you cannot add cycles. I tested this with multiple instances of operations that output the same type as they input, embedded in modules in various ways.
+

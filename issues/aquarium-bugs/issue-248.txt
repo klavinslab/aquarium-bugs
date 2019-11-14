@@ -1,0 +1,17 @@
+#248 It would be nice to be able to send an email to users when their sequencing results have returned
+By gasnew on 2017-09-22 17:30:38 UTC
+Labels: #<Sawyer::Resource:0x00005577ef628380> #<Sawyer::Resource:0x00005577ef63de38>
+
+
+
+## Feature request
+
+<!-- Write your feature as a user-story by replacing user-type, task and goal -->
+
+**User story:** As a *researcher*, I want Aquarium to *email* me my sequencing results so that I know to *take action in my plan* (tell Aquarium how my results look).
+
+I'm telling people to check their plans periodically in my video, but this would be a really helpful reminder.
+
+<!-- Copy user-story into issue title -->
+
+Comments: 0

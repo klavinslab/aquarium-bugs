@@ -1,0 +1,9 @@
+#189 Upload sequencing results aborted if results are not ready 
+By shalabiya on 2017-09-07 21:00:45 UTC
+Labels: #<Sawyer::Resource:0x0000555880d3aaa8>
+
+"Do the sequencing results show up?  No" It Aborted the protocol instead of pushing it back to pending. 
+
+http://52.27.43.242/krill/log?job=45075
+
+Comments: 0

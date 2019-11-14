@@ -1,0 +1,6 @@
+#246 Make sure the RNASeq workflow works end to end
+By klavins on 2017-09-20 20:54:45 UTC
+
+At the very least, you should be able to use the operation types in the planner and launch a plan. All data associations should work. Timing should be worked out. Exact verbiage for each step in the method can come later.
+
+Comments: 0

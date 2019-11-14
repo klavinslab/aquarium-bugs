@@ -1,0 +1,12 @@
+#210 minor Planner GUI glitch: popup for deleting modules doesn't work if deleting multiple at once
+By Gamemackerel on 2017-09-13 20:50:46 UTC
+Labels: #<Sawyer::Resource:0x0000556c507637e0> #<Sawyer::Resource:0x0000556c507607e8>
+
+If you select two modules and press delete, only one pop-up appears, and only one module is deleted
+
+Comments: 1
+--------
+From klavins on 2017-09-13 21:09:29 UTC
+
+Fixed
+

@@ -1,0 +1,18 @@
+#130 Routing for Containers options in Operation Definitions
+By jvrana on 2017-08-11 19:08:46 UTC
+Labels: #<Sawyer::Resource:0x00005609f8628948> #<Sawyer::Resource:0x00005609f8637420>
+
+In some cases, an operation may have multiple options for input and output containers. Sometimes, I think we would like the ability to link input and output container selections in a similar way that sample routing currently works.
+
+For example, in my "Trypsinize Plate" workflow, the inputs can be one of four possible containers which transform a Plate container to a Trypsinized Plate container. Some valid transitions would be
+"T25" > "Trypsinized T25"
+"T75" > "Trypsinized T75"
+While invalid transitions would be
+"T25" X "Trypsinized T175" (This makes no sense since it changes the plate size).
+
+It would be nice if output containers also had some routing functionality such that when you select a input container, the output container type would automatically switch to the container indicated by the routing id.
+
+![screen shot 2017-08-11 at 12 01 36 pm](https://user-images.githubusercontent.com/10437900/29228089-44fd2666-7e8d-11e7-9f6a-23ee4033b5bd.png)
+
+
+Comments: 0

@@ -1,0 +1,17 @@
+#227 Minor planner gui glitch: Inventory for an input not updated upon deleting input
+By Gamemackerel on 2017-09-18 19:11:45 UTC
+Labels: #<Sawyer::Resource:0x00005577eff0a598> #<Sawyer::Resource:0x00005577eff090a8>
+
+Not a huge pain, but probably mildly confusing. When an input box is emptied, the inventory div should be updated![itemglitch.gif](https://images.zenhubusercontent.com/59b9c56cb0222d5de477a650/f64f1c88-df08-4423-9e7c-3168181bf6c9)
+
+Comments: 2
+--------
+From klavins on 2017-09-18 22:02:48 UTC
+
+Woah, this seriously raises the bar for bug reports!
+
+--------
+From klavins on 2017-09-18 22:32:50 UTC
+
+Mostly fixed this. Might be some other cases. I think the whole propagation thing needs a rewrite and I have a good idea how to do that. In the meantime, hopefully I'm getting most of the issues.
+

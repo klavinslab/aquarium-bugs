@@ -1,0 +1,7 @@
+#17 As a Lab Manger, I want the primer Tm to be calculated automatically when adding to Inventory to avoid having to enter it
+By dvnstrcklnd on 2017-07-14 17:56:16 UTC
+Labels: #<Sawyer::Resource:0x0000556b83262610> #<Sawyer::Resource:0x0000556b820c4f48>
+
+This should be straightforward, because the annealing region is specificed.
+
+Comments: 0

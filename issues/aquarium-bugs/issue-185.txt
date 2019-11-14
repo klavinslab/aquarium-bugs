@@ -1,0 +1,14 @@
+#185 job.rb
+By dvnstrcklnd on 2017-09-06 21:42:14 UTC
+
+```ruby
+has_many :job_associations
+  # has_many :operations, through: :jobs_associations # not working for some reason
+  def operations
+    job_associations.collect { |ja| ja.operation }
+  end
+```
+
+I happened to notice this while looking at the code. I think the reason why this is not working is that it should be `:job_associations` not `:jobs_associations`
+
+Comments: 0

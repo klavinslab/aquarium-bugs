@@ -1,0 +1,13 @@
+#220 As a workflow developer, I want to be able to associate multiple rows/columns with one operation so I can QC multiple colonies at once
+By ayeshasal on 2017-09-15 17:25:15 UTC
+Labels: #<Sawyer::Resource:0x0000556c4ffb5520> #<Sawyer::Resource:0x0000556c4ffc6dc0> #<Sawyer::Resource:0x0000556c4ffd0bb8>
+
+Right now, we don't have the capability to have multiple i/o rows/columns associated with an operation, which means we can only output one part of a collection even if we want to output multiples parts in a collection, e.g.: in yeast qc, you want to qc multiple colonies, but at this point, we don't really have a way to qc three colonies without the user having to submit three separate lysates/pcrs/fragment analyzings, which is 1) annoying on the users part (we have some users that qc 8 colonies at a time) and 2) can cause issues with picking correct colonies for overnights. 
+
+
+Comments: 1
+--------
+From klavins on 2017-09-15 23:44:43 UTC
+
+Can you output an array of parts?
+

@@ -1,0 +1,14 @@
+#156 JSON input in launcher limited to 255 characters; preventing customers from submitting gBlocks
+By jvrana on 2017-08-22 23:46:47 UTC
+Labels: #<Sawyer::Resource:0x0000555880cfe828> #<Sawyer::Resource:0x0000555880cfd298>
+
+JSON inputs in the planner gets trimmed to 255 characters after saving. You are allowed to enter large JSON but it automatically trims after saving. A 255 character JSON is not very large. We may want to interpret very large JSON files for some protocols.
+
+Set to **CRITICIAL** since this is limiting some customers from submitting Order gBlock Fragment operations. The Order gBlock Fragment uses a JSON input field to interpret sequences. I was using a JSON input since I assumed the JSON input field was very large.
+
+Comments: 1
+--------
+From klavins on 2017-08-30 15:15:08 UTC
+
+Ok, but I think people should order gblocks by linking sequences to their Fragment descriptions.
+

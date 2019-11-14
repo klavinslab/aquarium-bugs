@@ -1,0 +1,91 @@
+#100 Autocomplete in Planner
+By dvnstrcklnd on 2017-08-06 01:22:16 UTC
+Labels: #<Sawyer::Resource:0x00005609f8480af0> #<Sawyer::Resource:0x00005609f848f1e0>
+
+IWBNI the autocomplete in the planner could go through ActiveRecord via a json request. This is relatively straightforward to implement in jQuery, though I don't know what the corresponding Angular would look like. 
+
+The reason is that you can't add things to inventory then see them in the planner without refreshing. Refreshing clears the plan, and you have to start over.
+
+This may also speed up the initial planner load as it would have to do fewer resource calls and bring in less data up front.
+
+Comments: 6
+--------
+From klavins on 2017-08-06 02:07:36 UTC
+
+The new planner will fix this problem, in that you can save plans and come back to them.
+
+Autocomplete with ajax is trivial, and it is in fact how I get the autocomplete data. There are tens of thousands of samples, so every time you clicked an input box you would have to wait. Loading them once at the beginning works well with the new gui given that you can easily refresh after adding inventory items.
+
+--------
+From klavins on 2017-08-06 02:18:39 UTC
+
+In the console you can write:
+
+    t1 = Date.now(); AQ.get_sample_names().then(() => t2 = Date.now())
+    t2-t1
+
+which on BIOFAB production gives 1145 ms when there is no load. Kind of a long time.
+
+--------
+From dvnstrcklnd on 2017-08-06 02:54:00 UTC
+
+Does that return the whole table? The whole point is that you fire a where
+query that limits by the letters that they user types (you can set the JS
+to only fire after 2 or 3 letters are typed) and also limit by container
+type. You could also do a map before you send back the data so that you
+only pass the ids and names instead of the complete records.
+
+On Sat, Aug 5, 2017 at 7:18 PM, Eric Klavins <notifications@github.com>
+wrote:
+
+> In the console you can write:
+>
+> t1 = Date.now(); AQ.get_sample_names().then(() => t2 = Date.now())
+> t2-t1
+>
+> which on BIOFAB production gives 1145 ms when there is no load. Kind of a
+> long time.
+>
+> —
+> You are receiving this because you authored the thread.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/klavinslab/aquarium-bugs/issues/100#issuecomment-320481265>,
+> or mute the thread
+> <https://github.com/notifications/unsubscribe-auth/AHPBy3iu3jv6yNet59Pt89BeH8V_4lQhks5sVSJ_gaJpZM4Oum4d>
+> .
+>
+
+--------
+From klavins on 2017-08-06 03:24:36 UTC
+
+It sends only a list of names (not the entire records). And it is organized by sample type (not container type, since that doesn't sort samples). Seeing that it takes 1.3s, it isn't a big deal to do it once. Having it fire after the user types a few key strokes could work though. 
+
+This is not high on my list, but let's keep it on here and perhaps Ben can do it. For now, let's see how the new gui works out. It may obviate the need.
+
+--------
+From dvnstrcklnd on 2017-08-06 03:57:28 UTC
+
+Sorry. Won't happen again.
+
+On Sat, Aug 5, 2017 at 8:33 PM, Eric Klavins <notifications@github.com>
+wrote:
+
+> By the way, this is half feature request and half implementation
+> recommendation. I think the way it should read is: The planner autocomplete
+> should include samples added in another tab so the user does not have to
+> reload the page to see their new samples. I shouldn't have gotten sucked in.
+>
+> —
+> You are receiving this because you authored the thread.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/klavinslab/aquarium-bugs/issues/100#issuecomment-320483444>,
+> or mute the thread
+> <https://github.com/notifications/unsubscribe-auth/AHPByy7hIk_OdZ7WbjjVWoMeQqGYNjZ1ks5sVTQSgaJpZM4Oum4d>
+> .
+>
+
+--------
+From klavins on 2017-08-06 04:16:41 UTC
+
+I think its fine to talk about implementation, just somewhere else. I want to keep it separate from the list of features and bugs. I haven't had to deal with gigantic lists of feature requests before (this one is #100), but it seems to me that a feature request ought to be a description of a desired behavior. Similar, bug reports are descriptions of how the software doesn't do what it is supposed to (as opposed to how to fix it).
+

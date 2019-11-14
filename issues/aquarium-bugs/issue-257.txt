@@ -1,0 +1,13 @@
+#257 Protocol Library: As a protocol developer I want to be able to create data associations automatically for files contained within a zip file in a way that the technician does not have to.
+By bjkeller on 2017-09-29 20:45:25 UTC
+Labels: #<Sawyer::Resource:0x00005577efe1fe58> #<Sawyer::Resource:0x00005577efe1e968> #<Sawyer::Resource:0x00005577efe1d478>
+
+**User Story**: As a *protocol developer* I want to be able to *create data associations automatically for files contained within a zip file* in a way that *the technician does not have to*.
+
+When a zip file contains files that are labeled with appropriate IDs, it is possible to automatically unzip and create associations for each of the files as indicated by the IDs. This is basically the Upload Sequencing protocol without having the technician do the unzipping. 
+
+The default behavior should be to create a zip file of relevant files from the original zip file for each association.
+
+See [rubyzip](https://github.com/rubyzip/rubyzip) for a possibly relevant gem.
+
+Comments: 0

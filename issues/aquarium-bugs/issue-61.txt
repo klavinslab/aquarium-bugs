@@ -1,0 +1,7 @@
+#61 Prev/Next in krill logs crashes if job doesn't exist
+By klavins on 2017-07-26 15:53:35 UTC
+Labels: #<Sawyer::Resource:0x0000556b830d5518> #<Sawyer::Resource:0x0000556b830e3ed8>
+
+Go here http://52.27.43.242/krill/log?job=42957 and click "Next".
+
+Comments: 0

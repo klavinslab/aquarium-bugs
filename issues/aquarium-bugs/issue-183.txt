@@ -1,0 +1,49 @@
+#183 Need to change view of charges so that easier to manage cost-only budgets (relevant to SD2)
+By dvnstrcklnd on 2017-09-06 17:54:51 UTC
+Labels: #<Sawyer::Resource:0x0000555880db73c8> #<Sawyer::Resource:0x0000555880db5ed8>
+
+Costs for this project should show up as materials-only in the planner, and only these costs should show up in the billing. 
+
+Comments: 6
+--------
+From bjkeller on 2017-09-06 18:10:23 UTC
+
+Can you help rephrase this as a user-story?  The beginning is 
+
+> As a Researcher, I want to create cost-only budgets when ...
+
+but need detail of circumstances where this is needed, is acceptable, and if there are details of approval.
+
+--------
+From dvnstrcklnd on 2017-09-06 19:02:06 UTC
+
+It isn't really a user story. It's a reporting requirement that can be invisible to the user. There may be details that are yet to be worked out. I mainly wanted to create a placeholder as this is something that I believe we need to address soon.
+
+The DARPA SD2 project has different billing requirements than most BIOFAB jobs. In particular, we do not charge for labor on these jobs, and we may also use a different overhead calculation. Amanda will have the details on this.
+
+The use of the alternative cost model should be triggered when the user selects DARPA SD2 as the budget in the planner. From this point forward, costs should be calculated using the alternative model everywhere they appear. This would apply to the planner as well as in the final invoices. There may be other places where it shows up that I am not thinking of, but I anticipate that the structure of the code will take care of this.
+
+Not sure what you mean about details of approval.
+
+--------
+From bjkeller on 2017-09-06 22:07:19 UTC
+
+Would it be that certain budgets are only charged cost-only?
+
+--------
+From bjkeller on 2017-09-13 21:18:21 UTC
+
+Fixed by https://github.com/klavinslab/aquarium/pull/263.
+Invoices are now shown with labor, materials and overhead costs split.
+If it is necessary to have invoices with only material costs, then it will be necessary to modify how budgets are handled.
+
+--------
+From bjkeller on 2017-09-19 15:15:04 UTC
+
+Need to show this to Amanda
+
+--------
+From bjkeller on 2017-09-26 16:37:39 UTC
+
+Amanda gives thumbs-up
+

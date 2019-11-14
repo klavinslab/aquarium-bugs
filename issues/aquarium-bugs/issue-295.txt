@@ -1,0 +1,8 @@
+#295 Feature request: use UTC as default time zone instead of pacific time
+By emernic on 2018-04-12 23:12:12 UTC
+
+https://github.com/klavinslab/aquarium/blob/c5ae165495683377c5067f002e6012ab59cb0a22/config/application.rb#L50
+
+The default time zone specified in application.rb is pacific time. It would be better if this was set to UTC or at least noted in installation instructions.
+
+Comments: 0

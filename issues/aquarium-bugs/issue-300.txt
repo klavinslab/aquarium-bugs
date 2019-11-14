@@ -1,0 +1,14 @@
+#300 Bug: Subsequent operations are not firing after replanning a series of operations 
+By jvrana on 2018-06-08 15:46:56 UTC
+Labels: #<Sawyer::Resource:0x0000555c48d7c0b8>
+
+## Bug report
+
+Subsequent operations are not firing after replanning a series of operations (as in replanning an entire module).
+
+<img width="305" alt="screen shot 2018-06-08 at 8 42 17 am" src="https://user-images.githubusercontent.com/10437900/41167521-fdb8b308-6af7-11e8-8367-3d832507a311.png">
+
+- **Reproduce by:** Replanning a series of errored out protocols. For example above, the Make PCR Fragment module had the wrong fragment. I replanned the entire module. Make PCR fragment was run successfully, but Run Gel is stuck in waiting. The input to Run Gel to not the same item as the output of the Make PCR fragment and still refers to the deleted item from the previously errored run.
+- **Expected:** Subsequent operations are run after replanning
+
+Comments: 0

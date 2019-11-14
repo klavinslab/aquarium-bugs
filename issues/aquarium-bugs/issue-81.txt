@@ -1,0 +1,19 @@
+#81 IWBNI the developer > test tab could fire a full-featured job with one click
+By dvnstrcklnd on 2017-08-02 16:46:18 UTC
+Labels: #<Sawyer::Resource:0x00005609f7cc3498> #<Sawyer::Resource:0x00005609f7dda868>
+
+Instead of the minimal test view. The test view is useful for spotting errors, but doesn't really show you how things look or interact. Debugging image rendering has been especially painful.
+
+Comments: 2
+--------
+From jvrana on 2017-08-02 17:19:26 UTC
+
+I would also really like something like this. Debugging protocols that have technician interactions has been difficult and very slow.
+
+For images, it would be especially useful if the images would also just somehow display in the tester.
+
+--------
+From gasnew on 2017-08-02 17:22:18 UTC
+
++1
+

@@ -1,0 +1,17 @@
+#233 As a user, I would like to reply to the Sequencing ok? in my plans with a drop-down menu so that it is less confusing as to what to say. 
+By dvnstrcklnd on 2017-09-19 03:38:21 UTC
+Labels: #<Sawyer::Resource:0x00005577efc90358> #<Sawyer::Resource:0x00005577efc9cf18>
+
+As a user, the sequencing ok field ? is quite confusing. It seems like it should be a pull-down menu. Also, the icons that are used to save or revert (?) are not intuitive. It would be nice if they were more conventional and had some explanations upon mouseover. I've found https://material.io/icons (e.g. https://material.io/icons/#ic_save) to be a very useful library.
+
+Comments: 2
+--------
+From bjkeller on 2017-09-20 17:25:06 UTC
+
+Can you give an example job link?
+
+--------
+From dvnstrcklnd on 2017-09-20 22:52:08 UTC
+
+e.g.   2997: GG destination plasmids
+

@@ -1,0 +1,8 @@
+#306 Scroll bar for Location Wizards page
+By Delangeo on 2019-10-25 19:50:05 UTC
+
+## Feature request
+As a Developer I want to be able to look at the Location Wizards currently available in the Database. However, when accessing the list of Location Wizards through the burger in the top left corner the page has no scroll bar so I cannot see all of the available location wizards. The only way to do this right now is to minimize the display so that more location wizards become visible. 
+
+
+Comments: 0

@@ -1,0 +1,24 @@
+#209 minor Planner GUI glitch: when a plan that contains a module is collapsed into a module, some wires are removed
+By Gamemackerel on 2017-09-13 20:41:44 UTC
+Labels: #<Sawyer::Resource:0x0000556c4ff18d38> #<Sawyer::Resource:0x0000556c4ff363b0>
+
+If I have a plan with module like this:
+![module in plan](https://user-images.githubusercontent.com/3107677/30399275-fc7cc77e-9887-11e7-8b0a-741b0dcb828c.PNG)
+
+And I decide to make a new module that contains that entire plan
+![containingmodule](https://user-images.githubusercontent.com/3107677/30399296-0edf6fde-9888-11e7-8e94-61b05cded8c3.PNG)
+
+upon expanding the containing module, I discover all the wires to and from the intermediate module are removed. 
+![insidecontainer](https://user-images.githubusercontent.com/3107677/30399335-2654459a-9888-11e7-8d8d-928fe7ed9d80.PNG)
+
+The wires can be re-established without too much effort, but could be troublesome when making huge overarching modules with detailed internal organization. 
+
+creating an empty module and then building modules up from scratch avoids this issue entirely, its only the 'instant module from selection' feature that causes it.
+
+
+Comments: 1
+--------
+From klavins on 2017-09-13 22:48:12 UTC
+
+Ok, this is fixed.
+

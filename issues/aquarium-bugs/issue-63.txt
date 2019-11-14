@@ -1,0 +1,9 @@
+#63 It would be helpful to have a button for pulling the most recent protocol version
+By gasnew on 2017-07-26 17:05:38 UTC
+Labels: #<Sawyer::Resource:0x00005609f86358a0> #<Sawyer::Resource:0x00005609f8645fc0>
+
+Something I do a lot when developing protocols on nursery is check the version history of the same protocol on production. If the production protocol version is more recent, I will copy it and paste it into the nursery version. This breaks my flow of development, especially when I'm developing several protocols in tandem.
+
+An added benefit from this more official protocol version coupling would be ensuring that protocols don't diverge between servers. I've made the mistake before of updating an outdated version, and it's difficult to reconcile the differences once that happens.
+
+Comments: 0

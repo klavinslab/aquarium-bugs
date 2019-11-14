@@ -1,0 +1,16 @@
+#133 Editing Container defaults to sample type Primer
+By jvrana on 2017-08-13 17:18:48 UTC
+Labels: #<Sawyer::Resource:0x0000555880ed8478> #<Sawyer::Resource:0x0000555880ee6f28>
+
+If you try to edit a container for an existing sample or create a new container, it will default the sample type to Primer.
+
+For example, if you edit a Fragment Stock container, the sample type will change to Primer. If you miss this, the container will change sample types.
+
+With all of the new workflows coming online and the changes to existing workflows, I think this is fairly important to fix before someone unknowingly starts swapping sample types of item containers, especially those in production.
+
+Comments: 1
+--------
+From gasnew on 2017-08-17 17:08:40 UTC
+
+I second this. This bug has bested me a couple times before.
+

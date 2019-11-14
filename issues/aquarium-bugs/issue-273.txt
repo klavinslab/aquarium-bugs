@@ -1,0 +1,9 @@
+#273 New plans misbehaving
+By dvnstrcklnd on 2018-01-02 16:49:42 UTC
+Labels: #<Sawyer::Resource:0x0000555c48d84128>
+
+When loading my templates (`One Strain Titration` and `ProtStab new validation strains set 2`) the wires are incorrect because they no longer point to an input in downstream operation types. Also, the template won't revert. 
+
+This may be related to changes that I made to the input types in the protocol this morning.
+
+Comments: 0

@@ -1,0 +1,31 @@
+#157 A created operation can appear out of view in the planner
+By jvrana on 2017-08-22 23:49:53 UTC
+Labels: #<Sawyer::Resource:0x0000555880cd4438> #<Sawyer::Resource:0x0000555880ce2e20>
+
+You can add operations to be out of view of the planner, which the user is unable to control. At least one user has complained about this.
+
+MinRep: You can recreate this by adding a successor near the top of the planner as in the picture below.
+
+<img width="259" alt="screen shot 2017-08-22 at 4 47 26 pm" src="https://user-images.githubusercontent.com/10437900/29592586-e9b133da-8759-11e7-8296-fa58fb4f730d.png">
+
+Comments: 4
+--------
+From klavins on 2017-08-24 15:40:20 UTC
+
+Note that for now you can press A (or ctrl-A in the next version) to select all operations and move them into view.
+
+--------
+From bjkeller on 2017-09-05 19:57:24 UTC
+
+@jvrana What is the desired behavior?  That a new operation is only created within the current view, or that the view changes?
+
+--------
+From jvrana on 2017-09-06 16:01:07 UTC
+
+I think if the view got taller as you add operations out of view. But either of those solutions would be fine.
+
+--------
+From bjkeller on 2017-09-11 16:06:08 UTC
+
+I have a commercial tool that allows you to create a graph that is described using an outline. It creates new nodes in the graph as you type into the outline. It also will create nodes outside of the working view, but the view can be scrolled and resized. Automatic layouts can also be applied.
+

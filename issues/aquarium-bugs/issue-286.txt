@@ -1,0 +1,14 @@
+#286 Bug: Location Wizard screen shows extra duplicated boxes
+By emernic on 2018-03-07 20:20:10 UTC
+
+## Bug report
+
+<!-- Give affected user and basic description in issue title -->
+
+- **Reproduce by:** *Filling up a location wizard past the capacity of field 2 (M20P.1.0.0) and view this wizard.*
+- **Expected:** *Wizard viewer shows correct number of boxes.*
+- **Actual:** *An extra box is shown which is a duplicate (see picture).*
+- **Acceptance criteria:** *Wizard viewer shows correct number of boxes.*
+![bugged wiz](https://user-images.githubusercontent.com/11687588/37116044-fc4775fc-221a-11e8-93e4-9cea9744e8d9.png)
+
+Comments: 0

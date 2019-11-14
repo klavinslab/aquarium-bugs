@@ -1,0 +1,182 @@
+#205 op.input().sample can become conflicted
+By dvnstrcklnd on 2017-09-13 17:46:36 UTC
+Labels: #<Sawyer::Resource:0x0000556c5074fdd0>
+
+If you use the following method:
+`operations.each { |op| op.input(handle).set(item: donor.item) }`
+to reset input items, the sample that is later retrieved using `op.input(handle).item.sample` no longer matches the sample that is retrieved using `op.input(handle).sample`
+
+I recommend either eliminating the method `op.input().sample` or making it return `item.sample`.
+
+Comments: 4
+--------
+From jvrana on 2017-09-13 18:32:06 UTC
+
+I agree that can be confusing and I can't think of a situation in which `op.input().item.sample != op.input().sample` if the op.input().item exists. 
+
+But I think the FieldValue.sample accessor needs to point to its own child_sample (instead of to item.sample) because:
+1. `op.input().item`  may be a collection, which means `op.input().item.sample` is nil.
+2. `op.output().item` is nil for output FieldValues before make() is called. Items are created from the sample accessor of the output FieldValue.
+
+To keep FieldValue sample accessor conventions already in place, it might be better to modify the FieldValue set function to automatically update `op.input().sample` when setting an item so that
+   `op.input().sample == op.input().item.sample # should always be true`
+```ruby
+# in FieldValue.rb
+  def set opts={}
+    # new item setter
+    if opts[:item]
+        self.child_item_id = opts[:item].id
+        self.child_sample = opts[:item].sample if opts[:item].sample
+    end # reset child_sample when setting item
+    # old item setter
+    # self.child_item_id = opts[:item].id if opts[:item]
+    self.child_item_id = opts[:collection].id if opts[:collection]
+    self.row = opts[:row] if opts[:row]
+    self.column = opts[:column] if opts[:column]
+    self.save
+  end
+```
+
+--------
+From dvnstrcklnd on 2017-09-13 19:42:38 UTC
+
+Possibly, but I feel that if you try to solve it during the set, then there
+may still be ways to set it incorrectly. What about:
+
+```
+def sample
+  if item
+    item.sample
+  else
+    child_sample
+  end
+end
+```
+
+But on a deeper level, it seems like `sample` is maybe trying to do too
+many jobs.
+
+On Wed, Sep 13, 2017 at 11:32 AM, Justin Vrana <notifications@github.com>
+wrote:
+
+> I agree that can be confusing and I can't think of a situation in which op.input().item.sample
+> != op.input().sample if the op.input().item exists.
+>
+> But I think the FieldValue.sample accessor needs to point to its own
+> child_sample (instead of to item.sample) because:
+>
+>    1. op.input().item may be a collection, which means
+>    op.input().item.sample is nil.
+>    2. op.output().item is nil for output FieldValues before make() is
+>    called. Items are created from the sample accessor of the output FieldValue.
+>
+> To keep FieldValue sample accessor conventions already in place, it might
+> be better to modify the FieldValue set function to automatically update
+> op.input().sample when setting an item so that
+> op.input().sample == op.input().item.sample # should always be true
+>
+> # in FieldValue.rb
+>   def set opts={}
+>     # new item setter
+>     if opts[:item]
+>         self.child_item_id = opts[:item].id
+>         self.child_sample = opts[:item].sample if opts[:item].sample
+>     end # reset child_sample when setting item
+>     # old item setter
+>     # self.child_item_id = opts[:item].id if opts[:item]
+>     self.child_item_id = opts[:collection].id if opts[:collection]
+>     self.row = opts[:row] if opts[:row]
+>     self.column = opts[:column] if opts[:column]
+>     self.save
+>   end
+>
+> —
+> You are receiving this because you authored the thread.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/klavinslab/aquarium-bugs/issues/205#issuecomment-329257108>,
+> or mute the thread
+> <https://github.com/notifications/unsubscribe-auth/AHPBy5jniuqdIDU6BjxCq4X6Ph4wpAyhks5siB-ngaJpZM4PWenp>
+> .
+>
+
+--------
+From dvnstrcklnd on 2017-09-13 19:53:24 UTC
+
+Sorry, I didn't quite understand the first line of your email the first
+time I read it. The point is, I have created a situation in which
+op.input().item.sample
+!= op.input().sample even though the op.input().item exists. This happens
+in the Yeast Display ⟩ Challenge with Protease and Label protocol. through
+the `set_unique_items` method.
+
+On Wed, Sep 13, 2017 at 12:42 PM, Devin Strickland <dvn.strcklnd@gmail.com>
+wrote:
+
+> Possibly, but I feel that if you try to solve it during the set, then
+> there may still be ways to set it incorrectly. What about:
+>
+> ```
+> def sample
+>   if item
+>     item.sample
+>   else
+>     child_sample
+>   end
+> end
+> ```
+>
+> But on a deeper level, it seems like `sample` is maybe trying to do too
+> many jobs.
+>
+> On Wed, Sep 13, 2017 at 11:32 AM, Justin Vrana <notifications@github.com>
+> wrote:
+>
+>> I agree that can be confusing and I can't think of a situation in which op.input().item.sample
+>> != op.input().sample if the op.input().item exists.
+>>
+>> But I think the FieldValue.sample accessor needs to point to its own
+>> child_sample (instead of to item.sample) because:
+>>
+>>    1. op.input().item may be a collection, which means
+>>    op.input().item.sample is nil.
+>>    2. op.output().item is nil for output FieldValues before make() is
+>>    called. Items are created from the sample accessor of the output FieldValue.
+>>
+>> To keep FieldValue sample accessor conventions already in place, it might
+>> be better to modify the FieldValue set function to automatically update
+>> op.input().sample when setting an item so that
+>> op.input().sample == op.input().item.sample # should always be true
+>>
+>> # in FieldValue.rb
+>>   def set opts={}
+>>     # new item setter
+>>     if opts[:item]
+>>         self.child_item_id = opts[:item].id
+>>         self.child_sample = opts[:item].sample if opts[:item].sample
+>>     end # reset child_sample when setting item
+>>     # old item setter
+>>     # self.child_item_id = opts[:item].id if opts[:item]
+>>     self.child_item_id = opts[:collection].id if opts[:collection]
+>>     self.row = opts[:row] if opts[:row]
+>>     self.column = opts[:column] if opts[:column]
+>>     self.save
+>>   end
+>>
+>> —
+>> You are receiving this because you authored the thread.
+>> Reply to this email directly, view it on GitHub
+>> <https://github.com/klavinslab/aquarium-bugs/issues/205#issuecomment-329257108>,
+>> or mute the thread
+>> <https://github.com/notifications/unsubscribe-auth/AHPBy5jniuqdIDU6BjxCq4X6Ph4wpAyhks5siB-ngaJpZM4PWenp>
+>> .
+>>
+>
+>
+
+--------
+From jvrana on 2017-09-13 20:05:56 UTC
+
+Oh sorry, I meant I agreeing with you that op.input().item.sample != op.input().sample should not be allowed to happen (even though it currently is allowed to happen with the way FieldValue is coded). I was trying to say that I couldn't think of a situation in which we would want to purposefully have op.input().item.sample != op.input().sample, so I agree that we should change that.
+
+I think your solution above is better unless there is ever a situation that we purposefully want op.input().item.sample != op.input().sample (no idea if or why we'd want that)
+

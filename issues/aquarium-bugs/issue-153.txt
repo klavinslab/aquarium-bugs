@@ -1,0 +1,27 @@
+#153 Check Divided Yeast Plate Minor bug
+By wmvoje on 2017-08-22 17:29:24 UTC
+Labels: #<Sawyer::Resource:0x0000555880d57ec8>
+
+When attempting to make a divided yeast plate from a glycerol stock, the "Streak Plate" box input and outputs Nodes fail to both turn green. 
+
+How to replicate:
+1) Input "Check Divided Yeast Plate"
+2) ADD "streak plate"
+3) On "Streak Plate" input node select "Suspension Yeast Strain / Yeast Glycerol Stock"
+4) Enter yeast strain number in the IN or OUT text field entry. 
+5) Whichever in/out were selected for the entry is now green with the other being orange - However both of the text fields are green
+
+The remaining orange node can be made green by manually entering the strain number again in the respective text box. Or by saving the Plan.
+
+
+Comments: 2
+--------
+From Gamemackerel on 2017-09-11 22:12:25 UTC
+
+I think this is the same issue as #117
+
+--------
+From wmvoje on 2017-09-11 22:23:37 UTC
+
+It's very similar. Not sure if it's identical.
+

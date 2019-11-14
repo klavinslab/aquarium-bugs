@@ -1,0 +1,60 @@
+#221 Planner GUI glitch: Module outputs does not hook up to array inputs
+By Gamemackerel on 2017-09-15 18:40:37 UTC
+Labels: #<Sawyer::Resource:0x0000556c4f8cb778> #<Sawyer::Resource:0x0000556c4f8c9040>
+
+When the output of a module that produces a fragment stock is wired in as an input for assemble plasmid, propagation fails in either direction, and assemble plasmid refuses to use the output of the module as it's input, either marking itself orange or using already made inventory of that type.
+
+
+![capture2](https://user-images.githubusercontent.com/3107677/30498222-bd77e41c-9a0a-11e7-87de-980de530c842.PNG)
+
+Comments: 9
+--------
+From klavins on 2017-09-15 21:06:59 UTC
+
+I can't reproduce this problem. Here's what I tried: I made a module with "Purify Gel" in it. I hooked its output up to the input of "Assemble Plasmid". I tried changing the sample for each end of the wire and it propagated and changed the colors correctly.
+
+--------
+From klavins on 2017-09-15 21:07:50 UTC
+
+
+<img width="209" alt="untitled" src="https://user-images.githubusercontent.com/4392589/30503480-3fb24c1a-9a1f-11e7-9141-0f5144773bcf.png">
+
+--------
+From Gamemackerel on 2017-09-15 21:47:51 UTC
+
+Yup I can't reproduce it now either. I think the issue was caused from using modules that were saved from a previous version?
+
+--------
+From klavins on 2017-09-15 21:51:35 UTC
+
+Sometimes it might have to do with whether the plan has been saved or not, or whether it is the first plan you've made since reloading the page, or not, etc.
+
+--------
+From Gamemackerel on 2017-09-15 23:14:12 UTC
+
+I found the issue behind this, it is pretty significant. 
+It looks like the issue occurs for operations that are included in a template without pre-specified input or wiring. When a template with an operation like this is loaded, the inputs for the operation behave oddly. the inputs will only accepts existing inventory items, or wiring from adding suggested predecessors. Shift clicking from a prior predecessor to the input fails to create a wire, and shift clicking from a compatible module output creates a 'false' wire
+
+Below on the left, the check plate operation was grabbed from the operation list, the propagation and wiring works just fine. On the right, the check plate operation was pulled from a singleton template, and its input will not allow wiring to the predecessor, with shift+click. 
+![template v oper](https://user-images.githubusercontent.com/3107677/30506359-266ae0f8-9a30-11e7-8004-77785a792ec5.PNG)
+
+--------
+From Gamemackerel on 2017-09-15 23:23:33 UTC
+
+The fact that I thought this was specific to array inputs / module outputs arose from a coincidence in how I was testing. I was testing with an assemble plasmid operations that I got from a template, but testing non-array input operations from the operations list. Then I hooked up the module to the Assemble Plasmid with the faulty right click, but I hooked up an operation to the assemble plasmid using the suggested predecessor button, which does work in this case.
+
+--------
+From klavins on 2017-09-15 23:25:43 UTC
+
+I think I have reproduced the issue. One thing I noticed is that if you paste the template, save the plan, and then wire things up, it works. I think. Anyway, working on it ...
+
+--------
+From Gamemackerel on 2017-09-15 23:29:35 UTC
+
+Yea saving it makes it work fine, so this probably isn't quite as dramatic of a glitch as I made it sound in my email
+
+--------
+From klavins on 2017-09-15 23:40:57 UTC
+
+Ok, found it. It was a one line fix (removed the computation of a nonexistent getter). Let me know if you see similar issues with pasting templates.
+

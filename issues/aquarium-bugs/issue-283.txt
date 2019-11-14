@@ -1,0 +1,12 @@
+#283 Feature request: Genbank upload or linking with Benchling rather than manually adding samples
+By emernic on 2018-02-27 14:15:25 UTC
+
+## Feature request
+
+<!-- Write your feature as a user-story by replacing user-type, task and goal -->
+
+**User story:** As an *end user*, adding samples is one of the main hurdles to using Aquarium. After designing my cloning workflow in other software such as Benchling or SnapGene, I must manually create a properly formatted excel file with the relevant information. It would be easier if I could bulk upload a list of Genbank files and have Aquarium automatically extract the relevant information. A roadblock to implementing this would be that sample types are currently instance-specific.
+
+<!-- Copy user-story into issue title -->
+
+Comments: 0

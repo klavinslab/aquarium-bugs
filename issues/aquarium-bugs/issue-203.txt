@@ -1,0 +1,21 @@
+#203 Minor Planner GUI glitch: "ghost operations" that have been deleted appear in list of operations
+By Gamemackerel on 2017-09-12 21:14:17 UTC
+Labels: #<Sawyer::Resource:0x0000556c5084f668> #<Sawyer::Resource:0x0000556c5084e178>
+
+Protocol definitions that are saved and then deleted or moved still show up in their original operations category, but only on the planner.
+
+Here is the list of cloning operations in the *Developer* (same as manager):
+![cloning operations developer](https://user-images.githubusercontent.com/3107677/30346295-2d6b5a6a-97bd-11e7-9398-d9562209aba2.PNG)
+
+Here is the list of cloning operations in the *Planner*. 
+Notice the extra operations that were made by Sarah as intermediates for copying protocols into the library cloning category as a foundation for her new protocols. They have since been deleted or moved out of the cloning category.
+![cloning operations planner](https://user-images.githubusercontent.com/3107677/30346275-21b67664-97bd-11e7-949f-d8d9e74f9d6b.PNG)
+
+
+
+Comments: 1
+--------
+From klavins on 2017-09-13 23:23:26 UTC
+
+Fixed
+

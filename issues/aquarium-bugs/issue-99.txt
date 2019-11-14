@@ -1,0 +1,22 @@
+#99 Header updates incorrectly
+By dvnstrcklnd on 2017-08-06 00:01:00 UTC
+Labels: #<Sawyer::Resource:0x00005609f8510768> #<Sawyer::Resource:0x00005609f8522350>
+
+If you open the 'Cloning > Rehydrate Primer' protocol, then click on the 'Yeast Display' category in the sidebar, you get this:
+
+<img width="1440" alt="screen shot 2017-08-05 at 4 53 17 pm" src="https://user-images.githubusercontent.com/7586251/28999559-567f85d8-79ff-11e7-9f2a-e742137177f9.png">
+
+which is incorrect because there is no 'Reydrate Primer' within 'Yeast 'Display' category. 
+
+Comments: 1
+--------
+From dvnstrcklnd on 2017-08-07 16:24:57 UTC
+
+I've been thinking about this in the context of my possible observation last week that protocol DEF forms were saving to the wrong record. Because this was such a fleeting thing and I can't verify or reproduce it, and also because it is a very unlikely mode of failure in vanilla rails forms, I was skeptical that it is actually happening.
+
+However, thinking about it in the context of javascript, it seems more likely. Depending on how the javascript is implemented, it could produce this mode of failure.
+
+If the application produces all possible forms, then the javascript hides all but one, then it is still unlikely that this failure would happen. 
+
+However, if the javascript manipulates the record id in the HTML tags directly, then it could lead to exactly this behavior if one navigation click updates the id, but a subsequent click fails to update it. In my admittedly limited experience, these kinds of silent, history-dependent failures are the most annoying thing about javascript. 
+

@@ -1,0 +1,15 @@
+#15 As a protocol developer I want preferred predecessor selections to be clearer in order to avoid misunderstanding
+By jvrana on 2017-07-14 16:47:25 UTC
+Labels: #<Sawyer::Resource:0x0000556b82a0ad28> #<Sawyer::Resource:0x0000556b82a19fd0>
+
+Currently, in the preferred predecessor options in the developer page, preferred predecessors are displayed as:
+
+**Category : Operation Type Name : Output FV name**
+
+But I think it would be useful to include the container name that the preferred predecessor refers to as well, since it can be ambiguous as to what predecessor you are referring to:
+
+**Category : Operation Type Name : Object Type Container Name**
+
+An example of this ambiguity can be found in the preferred predecessors of Template field in the  Make PCR Fragment operation, in which one of the preferred predecessors says `Cloning : Make Glycerol Stock : Stock` "Stock" is kind of ambiguous as to what its referring to. I think `Cloning : Make Glycerol Stock : Plasmid Stock` might be better...
+
+Comments: 0

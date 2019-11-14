@@ -1,0 +1,15 @@
+#208 Planner GUI annoyance: normal browser hotkeys not ignored when planner in focus
+By Gamemackerel on 2017-09-13 19:37:30 UTC
+Labels: #<Sawyer::Resource:0x0000556c50534208> #<Sawyer::Resource:0x0000556c50565330>
+
+When I use Ctrl-A on the planner, it selects all the operations in the plan, but it also highlights all the text on screen. 
+Likewise when I use Ctrl-S on the planner, the plan is saved, but it also opens up a popup window to save the html file of the planner page to my computer.
+
+Chrome on Windows
+
+Comments: 1
+--------
+From klavins on 2017-09-13 19:58:20 UTC
+
+Ok, fixed this for ctrl-A and ctrl-S. I also removed the ctrl-N shortcut because apparently you can't capture it on windows. Finally, it is still an issue that the shortcuts only work when the main editor is the focus. 
+

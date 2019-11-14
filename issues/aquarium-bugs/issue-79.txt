@@ -1,0 +1,15 @@
+#79 Broken Yeast mating
+By wmvoje on 2017-08-01 22:58:30 UTC
+Labels: #<Sawyer::Resource:0x00005609f8016550> #<Sawyer::Resource:0x00005609f8021568> #<Sawyer::Resource:0x00005609f803ced0>
+
+I don't understand how "yeast mating" is supposed work as it currently exists. I can't figure out a way to link two strains together to do a co-cultured yeast mating growth. I might not be understanding this? If not this is a critical bug.
+
+Also it seems like it should be possible to use a streaked plate to do a yeast mating...
+
+
+Comments: 1
+--------
+From ayeshasal on 2017-08-03 08:17:03 UTC
+
+we don't currently have the yeast mating workflow incorporated into aquarium 2. unfortunately, if you need to do yeast mating you'll have to discuss this with cami and sam, who'll help you decide the best course of action. we're working on getting it up as fast as possible. thanks! 
+

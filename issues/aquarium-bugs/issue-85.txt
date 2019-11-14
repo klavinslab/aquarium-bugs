@@ -1,0 +1,7 @@
+#85 IWBNI the browser tab displayed the protocol name instead of "Developer"
+By dvnstrcklnd on 2017-08-04 16:10:32 UTC
+Labels: #<Sawyer::Resource:0x00005609f8698928> #<Sawyer::Resource:0x00005609f86a1a78>
+
+Also, the "AQ | " bit takes up space on the tab that could be used in a more informative way. Other workspace apps (Asana, Github, Google Docs) don't do this. 
+
+Comments: 0

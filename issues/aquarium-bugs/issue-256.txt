@@ -1,0 +1,7 @@
+#256 Protocol library for data associations
+By bjkeller on 2017-09-29 20:37:24 UTC
+Labels: #<Sawyer::Resource:0x00005577efe3d4f8>
+
+This is an epic for refactoring how data associations are created and managed within protocols. The subtasks should introduce methods of a `DataAssociator` module that simplify how data associations are created.
+
+Comments: 0

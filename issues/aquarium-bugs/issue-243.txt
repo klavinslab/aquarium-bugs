@@ -1,0 +1,7 @@
+#243 Upload Sequencing Results should ensure that all operations have the same tracking number
+By gasnew on 2017-09-20 19:57:44 UTC
+Labels: #<Sawyer::Resource:0x00005577efcc6db8> #<Sawyer::Resource:0x00005577efcc5828>
+
+If not all operations have the same tracking number, show an error in a Krill slide, and set all operations back to "pending."
+
+Comments: 0

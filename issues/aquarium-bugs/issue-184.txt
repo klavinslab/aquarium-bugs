@@ -1,0 +1,7 @@
+#184 Items can't always be deleted
+By cpc3 on 2017-09-06 21:31:04 UTC
+Labels: #<Sawyer::Resource:0x0000555880d8c858> #<Sawyer::Resource:0x0000555880d97320>
+
+The trashcan icon doesn't always show up. 
+
+Comments: 0

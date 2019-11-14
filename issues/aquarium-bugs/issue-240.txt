@@ -1,0 +1,7 @@
+#240 factor out shared methods from send to sequencing, gibson assemly, pcr, and cpcr
+By Gamemackerel on 2017-09-19 20:53:40 UTC
+Labels: #<Sawyer::Resource:0x00005577efd22b68>
+
+
+
+Comments: 0

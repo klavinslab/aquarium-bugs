@@ -1,0 +1,7 @@
+#141 As a Protocol Developer I would like to have additional code tabs in developer that separate shows from protocol logic in order to simplify building an operation
+By dvnstrcklnd on 2017-08-15 23:05:13 UTC
+Labels: #<Sawyer::Resource:0x0000555880cbca68> #<Sawyer::Resource:0x0000555880cc9b78>
+
+It would be convenient if there were additional tabs in the developer called 'SHOWS' and 'MODEL'. SHOWS would be a place to put all the show blocks, and MODEL would be a place to put all the hairy logic. They would be imported into the protocol tab automatically. This would make the PROTOCOL tab a lot cleaner and easier to read.
+
+Comments: 0

@@ -1,0 +1,27 @@
+#296 (Production) Fragment Analyzer false nil report on field value
+By jonluntzel on 2018-05-22 18:20:11 UTC
+
+## Protocol bug
+
+<!-- Give operation name and basic description in issue title -->
+<!-- Fragment Analyzing - under Yeast New in Production, gathers fragment stripwells and organizes
+them in the fragment analyzer machine before uploading results to Aquarium -->
+
+- **Operation name:** *Fragment Analyzing*
+- **Expected:** *gather fragment stripwells, organize them in the fragment analyzer, upload results to Aquarium*
+- **Actual:** *error: undefined method `value' for nil:NilClass*
+- **Link:** *http://52.27.43.242/krill/log?job=65461*
+
+
+## Bug report
+
+<!-- Samer/Cami - protocol aborted, even though it had been working for a while -->
+
+- **Reproduce by:** *Aquire a (Yeast Strain) sample and print its "Has this strain passed QC?" field value*
+- **Expected:** *Prints yes / no*.
+- **Actual:** *is a nil value, despite  the sample having the field in Aquarium database*
+- **Acceptance criteria:** *Field value prints what the sample internally has: yes or no*
+
+- Abe found that editing and saving a sample fixed its output, so it may be possible to fix just by running a script that edits and saves the samples with the "Has this strain passed QC?" field value without actually modifying them.
+
+Comments: 0

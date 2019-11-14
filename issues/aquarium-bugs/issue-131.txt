@@ -1,0 +1,23 @@
+#131 Copy to clipboard button in Krill
+By jvrana on 2017-08-11 20:46:07 UTC
+Labels: #<Sawyer::Resource:0x00005609f8609d90> #<Sawyer::Resource:0x00005609f86088a0>
+
+Currently, many technician interactions occur manually through web interfaces, excel, or peripheral software. Much of the time, this can include a lot of copying and pasting things. However, this is time consuming and mistakes can happen.
+
+A cool feature would be a copy to clip board button so that when the tech clicks the button, all the text is automatically copied to the clipboard, making interactions with websites and such much easier and efficient and eliminating mistakes. Something like
+
+```ruby
+show do
+     # a huge string designating a csv or tab deliminated table or anything else
+    str = generate_string()
+
+    check "Click the button below to copy table"
+    check "Paste it into the TWIST DNA webpage."
+    # display button which copies str to clipboard when clicked
+    copy_to_clipboard heading: "DNA Table", value: str
+end
+```
+
+I could see this being used _alot_ in many protocols.
+
+Comments: 0

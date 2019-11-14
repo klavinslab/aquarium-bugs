@@ -1,0 +1,14 @@
+#285 Bug: Object type not updating when propagating inputs/outputs in planner
+By emernic on 2018-03-02 01:17:56 UTC
+
+## Bug report
+
+<!-- Give affected user and basic description in issue title -->
+
+- **Reproduce by:** Create a plan using an operation with multiple possible output object types. Connect a downstream operation, and enter a sample on the downstream operation which has items of the wrong object type for the upstream operation.
+- **Expected:** Upstream operation (the one with multiple possible output object types) has its object type changed to match the sample type and object type of the downstream operation.
+- **Actual:** Object type of upstream operation does not change. Node shows up green, but there are actually no items of the selected object type and sample.
+![asdv](https://user-images.githubusercontent.com/11687588/36878570-93d292ae-1d8d-11e8-8f9a-092c8f356521.png)
+
+
+Comments: 0

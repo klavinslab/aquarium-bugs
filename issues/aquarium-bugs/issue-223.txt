@@ -1,0 +1,12 @@
+#223 Inconsistent wires involving modules are not orange.
+By klavins on 2017-09-15 21:01:46 UTC
+Labels: #<Sawyer::Resource:0x0000556c507476a8>
+
+
+
+Comments: 1
+--------
+From bjkeller on 2017-09-20 18:02:28 UTC
+
+@klavins Has this been resolved?
+

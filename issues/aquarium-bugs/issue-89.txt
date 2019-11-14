@@ -1,0 +1,11 @@
+#89 Adding isopropanol to gel purification 
+By ayeshasal on 2017-08-04 18:56:20 UTC
+Labels: #<Sawyer::Resource:0x00005609f8595a30>
+
+when a purify gel slice is submitted without having the gel run through aquarium it skips adding isopropanol. 
+http://52.27.43.242/krill/ui?job=43257 
+
+p.s. 
+This is Sam
+
+Comments: 0

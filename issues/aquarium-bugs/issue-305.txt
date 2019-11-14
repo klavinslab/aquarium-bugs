@@ -1,0 +1,14 @@
+#305 No way to reduce size of Operation Details window in Designer Interface
+By Delangeo on 2019-07-09 21:01:43 UTC
+
+## Feature request
+
+<!-- Write your feature as a user-story by replacing user-type, task and goal -->
+
+**User story:** As a *Designer*, I want to *be able to minimize the size of the operation details window* so that *I can still see my plan at the same time as looking at a specific Operation*
+![image](https://user-images.githubusercontent.com/19539123/60922658-1253a380-a252-11e9-9a44-07127f307e7f.png)
+
+
+<!-- Copy user-story into issue title -->
+
+Comments: 0

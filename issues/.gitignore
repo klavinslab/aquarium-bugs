@@ -1,5 +1,0 @@
-# This directory is used to hold the downloaded issues
-# Ignore the issues files
-*
-# but keep this file to include the directory
-!.gitignore

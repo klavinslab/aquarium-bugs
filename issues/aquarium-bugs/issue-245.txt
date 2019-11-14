@@ -1,0 +1,11 @@
+#245 Make sure ProtStab Workflow runs end to end
+By klavins on 2017-09-20 20:54:28 UTC
+
+At the very least, you should be able to use the operation types in the planner and launch a plan. All data associations should work. Timing should be worked out. Exact verbiage for each step in the method can come later.
+
+Comments: 1
+--------
+From dvnstrcklnd on 2017-09-20 22:56:53 UTC
+
+At some point this was done, but it may have regressed.
+

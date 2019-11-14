@@ -1,0 +1,14 @@
+#46 Input arrays only allow for one container type
+By jvrana on 2017-07-19 20:10:07 UTC
+Labels: #<Sawyer::Resource:0x0000556b83193ae0> #<Sawyer::Resource:0x0000556b831925f0>
+
+Unsure if this is a bug or if it was intended, but input arrays only allow for a single container type. I think for things like golden gates, we want the ability to use fragment stocks or plasmid stocks in the array.
+
+<img width="1045" alt="screen shot 2017-07-19 at 1 07 56 pm" src="https://user-images.githubusercontent.com/10437900/28387349-8bace7ca-6c83-11e7-937c-01f20cb51535.png">
+
+Comments: 1
+--------
+From klavins on 2017-07-23 23:52:13 UTC
+
+That's kind of a limitation of how arrays are implemented. Would take serious surgery to change this, alas. But we should keep this issue alive because it is, well, an issue.
+

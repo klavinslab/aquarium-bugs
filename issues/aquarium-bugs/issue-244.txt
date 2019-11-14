@@ -1,0 +1,8 @@
+#244 Upload Sequencing Results should ensure that all operations have associated sequencing results by the end of the protocol
+By gasnew on 2017-09-20 20:00:05 UTC
+Labels: #<Sawyer::Resource:0x00005577efbf6988> #<Sawyer::Resource:0x00005577efbf5218>
+
+- Create a table that displays expected file names
+- Up to five times, show remaining un-accounted-for operations in a table in subsequent Krill slides
+
+Comments: 0

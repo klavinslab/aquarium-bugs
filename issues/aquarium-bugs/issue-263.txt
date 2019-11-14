@@ -1,0 +1,11 @@
+#263 As a user, I would like to have Kan+Spec as an antibiotic option for plasmid samples.
+By segoldberg on 2017-10-24 19:06:15 UTC
+
+## Feature request
+As a user, I would like to have Kan+Spec as an antibiotic option for plasmid samples. 
+Currently there is no such option, so I cannot use the existing version of the Cloning/Streak E coli plate protocol with my sample.
+
+![image](https://user-images.githubusercontent.com/31996971/31962744-4499f61c-b8b3-11e7-8fd2-88f61e45a08c.png)
+
+
+Comments: 0

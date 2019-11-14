@@ -1,0 +1,7 @@
+#95 Inventory split into multiple pages
+By dyounger on 2017-08-04 21:25:39 UTC
+Labels: #<Sawyer::Resource:0x00005609f8557be0> #<Sawyer::Resource:0x00005609f8556650>
+
+Is there a different way to split the inventory? Having this by pages often means that the object that I am itnerested in are split across multiple pages and I often want to open up descriptions for many objects at once. (the closest this can be to an Excel spreadsheet where it is easy to scroll through everything, the better)
+
+Comments: 0

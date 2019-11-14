@@ -1,0 +1,48 @@
+#272 feature request: upload button remain "live" until used
+By segoldberg on 2017-12-04 22:10:49 UTC
+
+## Feature request
+As a technician, I want the upload button to be "live" even if I skipped over it (by mistake, or to read the next few protocol steps). It would be better if it turned gray only after it was used for uploading.
+
+Comments: 2
+--------
+From farheensal99 on 2017-12-18 17:27:35 UTC
+
+Hi! Could you provide more information on which upload button? A screenshot would be great. Thanks! 
+
+--------
+From segoldberg on 2017-12-18 17:40:53 UTC
+
+THE PROBLEM: for a show block containing the "upload" command, if you press
+the green ok (or right arrow) before uploading, the upload button is no
+longer active.
+THE REQUESTED FEATURE: keep the upload button live as long as nothing has
+been uploaded, or if the technician goes back to that step.
+
+i do not have screenshots.
+any code containing the "upload" command. example:
+
+uploads = show do
+                title "Select a file"
+                upload var: "uploaded_file"
+end
+
+for testing, you can use the highlighted protocol (on production, make your
+own copy) to request and up load to existing items/plans.
+[image: Inline image 1]
+
+On Mon, Dec 18, 2017 at 9:27 AM, farheensal99 <notifications@github.com>
+wrote:
+
+> Hi! Could you provide more information on which upload button? A
+> screenshot would be great. Thanks!
+>
+> —
+> You are receiving this because you authored the thread.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/klavinslab/aquarium-bugs/issues/272#issuecomment-352496356>,
+> or mute the thread
+> <https://github.com/notifications/unsubscribe-auth/Aeg8K4geRuMa31s-ft_oFUKupqlQVXz8ks5tBqCHgaJpZM4Q1Zxi>
+> .
+>
+

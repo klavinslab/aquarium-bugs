@@ -1,0 +1,17 @@
+#212 minor Planner GUI issue: When an output or input is deleted, the box and node stay green 
+By Gamemackerel on 2017-09-13 22:51:59 UTC
+Labels: #<Sawyer::Resource:0x0000556c5066fa00> #<Sawyer::Resource:0x0000556c5066e448>
+
+When a valid output and input are given for an operation, the nodes turn green. When the input and output fields are deleted and left blank, the nodes do not turn back to orange until the plan is saved. 
+
+![nodestaysgreenpng](https://user-images.githubusercontent.com/3107677/30404322-12928202-989b-11e7-886d-4a799560efa7.PNG)
+
+I think this bug has been known for a while, but it can be confusing for users so I'm making sure its on file.
+Similar node issue that also causes confusion: #117
+
+Comments: 1
+--------
+From klavins on 2017-09-15 16:02:46 UTC
+
+I believe this is fixed now.
+

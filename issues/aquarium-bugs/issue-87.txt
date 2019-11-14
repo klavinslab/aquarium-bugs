@@ -1,0 +1,7 @@
+#87 Items can be assigned the same location in Aquarium
+By cpc3 on 2017-08-04 16:46:41 UTC
+Labels: #<Sawyer::Resource:0x00005609f8608e68> #<Sawyer::Resource:0x00005609f8616040> #<Sawyer::Resource:0x00005609f861f528>
+
+If manually giving at item a location it can be given a position that is already taken and on error/warning will pop up. 
+
+Comments: 0

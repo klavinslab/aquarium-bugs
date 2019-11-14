@@ -1,0 +1,7 @@
+#232 Editable fields in plans
+By dvnstrcklnd on 2017-09-19 03:27:55 UTC
+Labels: #<Sawyer::Resource:0x00005577efcee160>
+
+As a user, it is unclear to me why there are editable item id fields in the view where I retrieve my sequence data. Maybe I don't understand something, but it is disconcerting for this relatively novice user.
+
+Comments: 0

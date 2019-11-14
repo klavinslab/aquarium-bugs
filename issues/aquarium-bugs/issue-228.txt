@@ -1,0 +1,20 @@
+#228 Front page GUI: Launch "Discard Items" button
+By gasnew on 2017-09-18 19:46:46 UTC
+Labels: #<Sawyer::Resource:0x00005577efeb16c8> #<Sawyer::Resource:0x00005577efeb01d8> #<Sawyer::Resource:0x00005577efebec88>
+
+## Feature request
+
+<!-- Write your feature as a user-story by replacing user-type, task and goal -->
+
+**User story:** As a *researcher*, it would be nice to have a button to launch a Direct Purchase job on the front page of Aquarium so that I don't have to fill out the weekly supplies spreadsheet.
+
+**Also:** As a *lab manager*, this would be nice so that I don't have to maintain a weekly supplies spreadsheet.
+
+<!-- Copy user-story into issue title -->
+
+Comments: 1
+--------
+From gasnew on 2017-09-20 19:52:06 UTC
+
+This issue is pretty orthogonal to the Graphical Planner epic, so I'm removing that association. I imagine this would be a button on the Aquarium homepage and/or banner for the user to click. This is the only OperationType I can think of where the user should be able to run the job themselves.
+

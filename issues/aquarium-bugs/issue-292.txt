@@ -1,0 +1,8 @@
+#292 As a user, I would like to have more ways to intuitively interact with my plan after submission
+By emernic on 2018-03-25 16:34:18 UTC
+
+## Large/long-term feature request
+
+As a user, there are currently very few intuitive ways to interact with a plan after submission other than cancelling it. It would be nice if users were able to do more things with the planner tab such as cancelling parts of a plan or adding more operations to a plan while it is running. Also, it would be very useful if developers could add in custom queries that users could respond to in an intuitive way (such as buttons or a dropdown for confirming seq results rather than requiring users to manually edit a data association). Also, it is difficult to get an understanding of a complex plan's progress by looking at it in the planner view (giant list of operations).
+
+Comments: 0

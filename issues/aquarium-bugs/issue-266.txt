@@ -1,0 +1,12 @@
+#266 operations with delayed status not cancelled
+By Gamemackerel on 2017-10-26 22:57:00 UTC
+Labels: #<Sawyer::Resource:0x00005577efd4c238> #<Sawyer::Resource:0x00005577efd5ac20>
+
+<!-- Give affected user and basic description in issue title -->
+
+- **Reproduce by:** *Cancel a plan with a delayed operation*
+- **Expected:** *Delayed operation has status set to error*.
+- **Actual:** *Delayed operation continues to have status of "delayed"*
+
+
+Comments: 0

@@ -1,0 +1,16 @@
+#238 Modify aquarium to use SSL
+By bjkeller on 2017-09-19 16:08:56 UTC
+
+for rails see rack-ssl gem.
+
+Comments: 2
+--------
+From klavins on 2017-09-19 16:44:41 UTC
+
+This is essentially #200 
+
+--------
+From bjkeller on 2017-09-19 16:56:41 UTC
+
+this is meant to be a sub issue of #200. 
+

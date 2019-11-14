@@ -1,0 +1,40 @@
+#297 Bug: In the technician view, attempting to use arrow keys while in text input can skip to the next step
+By emernic on 2018-05-24 02:05:39 UTC
+
+## Bug report
+
+Using arrow keys while entering text or numbers into an input box in the technician view can navigate to the next or previous steps. After skipping to the next step, the tech can no longer go back and edit inputs, leading to nonsensical or incorrect inputs that cause various problems.
+
+Preventing techs from navigating to the next step until they have entered values for the input boxes would partially solve this problem.
+
+- **Reproduce by:** *Opening a protocol with a text or numeric input box in a step. Attempting to use arrow keys to move the cursor inside the text box.*
+- **Expected:** *Arrow keys control cursor inside text box.*.
+- **Actual:** *Arrow keys **control the step navigation.***
+
+Comments: 4
+--------
+From jvrana on 2018-06-01 17:47:13 UTC
+
+I think one of the only reasons arrow keys have this function is so that we can use a foot pedal with Aquarium, which is _very nice_ to use during a protocol especially when you're using two hands (as you are in a fume hood or biological safety cabinet).
+
+Most footpedals can be changed to use the less used PgUp and PgDown instead of the arrow keys. This could be an easy fix.
+
+--------
+From emernic on 2018-06-01 17:53:17 UTC
+
+Thanks for the response. Switching to PgUp/PgDown would be great.
+
+--------
+From klavins on 2018-06-01 17:55:51 UTC
+
+Justin: The code for this is in 
+
+  https://github.com/klavinslab/aquarium/blob/staging/app/assets/javascripts/ng-control/technician.js 
+
+line 118. Since you are the one who uses this for the foot pedal stuff, why don't you modify this and make a pull request? 
+
+--------
+From jvrana on 2018-06-01 19:25:57 UTC
+
+Sure no problem, pull request (293) for this is submitted. Ben suggested to pull it to master since its a small change, but we can change it to pull into staging if you'd like.
+

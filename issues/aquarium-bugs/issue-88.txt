@@ -1,0 +1,9 @@
+#88 Planner does not check On the Fly operation inputs for inventory matches
+By gasnew on 2017-08-04 18:43:30 UTC
+Labels: #<Sawyer::Resource:0x00005609f85c1338> #<Sawyer::Resource:0x00005609f85cf320>
+
+See [this plan](http://52.27.43.242:81/launcher?plan_id=25369). I am able to submit Send to Sequencing (an On the Fly operation) without satisfying its inputs. I don't have a primer aliquot for the primer I specified.
+
+Additionally, I can't select my Unverified Plasmid Stock for the plasmid input to the operation. It looks like the planner doesn't check existing items to satisfy On the Fly operation inputs.
+
+Comments: 0

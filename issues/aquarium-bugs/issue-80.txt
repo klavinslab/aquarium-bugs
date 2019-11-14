@@ -1,0 +1,47 @@
+#80 Define yeast diploid strains like yeast haploid strains
+By wmvoje on 2017-08-01 23:05:32 UTC
+Labels: #<Sawyer::Resource:0x00005609f7ec6fb0> #<Sawyer::Resource:0x00005609f7ed58f8>
+
+I believe that it would better for yeast Diploid strains to be defined when creating a yeast strain inventory item. This would require the user to explicitly input the A and Alpha strains that would be mated to create it. 
+
+Defining diploid strains like this seems to be more consistent with the rest of the aquarium yeast workflow. Having this information tied to the description of a yeast strain will make it much easier to do do forensics/reverse engineering of diploid yeast strains. 
+
+I can understand why yeast matings are like gibsons.... as long as the right parts go in the right thing will be made..... But, as there is no way to know which parts, are harbored in which locus, in what genome, for a given diploid yeast strain it seems better to be very explicit about how it is built.
+
+(enhancement)
+
+Comments: 5
+--------
+From jvrana on 2017-08-02 17:26:48 UTC
+
+I agree with this. One option is to add two fields to the yeast sample type definition:
+```
+alpha: takes a Yeast sample
+a: takes a Yeast sample
+```
+For haploid strains, these two fields would be empty. For diploid strains, these two fields need to be defined (while "parent" is empty).
+
+The issue with this is that the Yeast Strain is becoming a behemoth and managing the markers is going to become annoying.
+
+--------
+From jvrana on 2017-08-02 17:27:57 UTC
+
+The other option is creating a new sample type (Yeast Diploid) with just two fields (A and Alpha). But the issue with this is that Yeast Diploids, after mating can do everything that Yeast Strains can do. The naming also is kind of confusing.
+
+Thoughts anyone else?
+
+--------
+From wmvoje on 2017-08-02 18:04:20 UTC
+
+You could allow multiple parents to be entered for a given strain. Currently strain definition is oblivious to parent strain information (i.e. one can accidentally make a matA strain from a matALPHA strain). This approach would allow the same level of freedom for explicitly defining a diploid. 
+
+--------
+From wrightrc on 2017-08-04 17:53:29 UTC
+
+Additionally, Yeast Mating doesn't seem to work like it did in Aq1. You can only specify one strain and only glycerol stocks of this strain. Perhaps with the new functionality discussed above this protocol could work, so I'll leave this bug here.
+
+--------
+From wrightrc on 2017-08-04 18:11:41 UTC
+
+Not sure about problems this might cause from the software side, but I think Justin's plan of having two parent fields (an a and alpha) would be the most logically consistent. This way the mating type field could also be removed. This would allow the Yeast Mating task to take a diploid strain that you want to make or two compatible haploids, from which the diploid item is generated.
+

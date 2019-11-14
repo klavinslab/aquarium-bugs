@@ -1,0 +1,21 @@
+#293 Feature Request: As a data analyzer, I want to access the historical data of items, samples, plans so that changing state of models over time is open for analysis
+By Gamemackerel on 2018-04-04 03:00:09 UTC
+
+## Feature request
+
+**User story:** As a *data analyzer*, I want to *access the historical data of items, samples, plans* so that *original state, and changing state over time of models that are modified by use can be retroactively analyzed*
+
+The only data available in the aquarium database represents the current state of all models in the system. Without access to the past states of items or samples, the power of data analysis is greatly limited.
+
+Some examples of problems that arise from not having access to past model states, courtesy of the DAMP lab development team:
+
+- We do a miniprep of a plasmid. The output plasmid item has a volume and a concentration (which can be used to calculate molar yield). This item is later used as the template for 10 different PCR reactions, decreasing it's volume. We now have no way of calculating the molar yield of the miniprep because the original data is not saved. Sure, we could assume that minipreps always produce items with the same volume, but this is a very specific workaround to one instance of a very general problem. Also, this isn't true for our miniprep protocol because we dilute high concentration outputs to a certain target concentration.
+
+- A PCR reaction fails. The user decreases the melting temperature of their primer sample and replans the PCR. If we want to analyze why the first PCR failed later, we cannot because we don't know what the Tm was when the PCR was run.
+
+- We want to see if an output item was deleted at the end of a protocol (indicating that maybe it was no good for some reason). We cannot check this; we can only check whether it is deleted now.
+
+A potential solution to this issue is to implement a model version control system in aquarium.
+[Paper Trail](https://github.com/airblade/paper_trail) is an example of such a system.
+
+Comments: 0

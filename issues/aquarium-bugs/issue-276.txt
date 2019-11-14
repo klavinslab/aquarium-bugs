@@ -1,0 +1,14 @@
+#276 In the developer interface, check boxes for preferred inputs behave erratically and do not save
+By emernic on 2018-01-31 21:32:45 UTC
+
+## Bug report
+- **Reproduce by:** Going into the developer tab for an operation type with several possible upstream operation types for an input and attempting to check multiple boxes for preferred inputs. Also, click "Update" and then refresh the page.
+Aquarium version (commit number): 0cf3253a5f6faad7859274278e4ead2b2516e994
+Ruby 2.2.0
+Server OS: 4.9.43-17.38.amzn1.x86_64 GNU/Linux
+Browser: Bug occurs in Chrome and also Microsoft Edge.
+- **Expected:** Boxes can be checked and unchecked independently. Changes are saved after clicking "Update".
+- **Actual:** Attempting to check multiple boxes sometimes unchecks other boxes. After clicking "Update" and refreshing the page, no changes are saved.
+- **Acceptance criteria:** Boxes can be checked and unchecked independently. Changes are saved after clicking "Update".
+
+Comments: 0

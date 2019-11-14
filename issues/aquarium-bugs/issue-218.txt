@@ -1,0 +1,12 @@
+#218 Planner GUI feature: Templates as preferred predecessor/successor
+By Gamemackerel on 2017-09-14 22:46:57 UTC
+Labels: #<Sawyer::Resource:0x0000556c500b5dd0> #<Sawyer::Resource:0x0000556c500c9ba0>
+
+This would be useful for building module/template based plans up quickly
+
+Comments: 1
+--------
+From ayeshasal on 2017-09-15 19:02:48 UTC
+
+to add on to this, in addition to having templates as preferred predecessors, having modules as preferred predecessors would be nice, too. 
+

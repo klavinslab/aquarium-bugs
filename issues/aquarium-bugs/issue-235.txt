@@ -1,0 +1,15 @@
+#235 As an SD2 user and developer, I would like to be able to provide flow cytometry metadata to other TAs
+By dvnstrcklnd on 2017-09-19 15:26:57 UTC
+Labels: #<Sawyer::Resource:0x00005577ef62b8a0> #<Sawyer::Resource:0x00005577ef63e428>
+
+As an SD2 user and developer, I would like to be able to provide flow cytometry metadata to other TAs following this convention: https://drive.google.com/open?id=0ByZLrtE6DlHbbFdiYmMzMHhDWEU
+
+For some experiments, notably with the Klavins lab cytometer, the `cytometer_configuration` object will be (in almost all cases) static. However, it would change to a different quasi-static configuration when using the Selig or Nemhauser instruments. It may need to be fully configurable when using the Pathology FACS instrument.
+
+The `color_model` object needs to be configurable in ways that I can't yet anticipate.
+
+The `experiment` object will likely be populated with data from Aq.
+
+I expect that this `.json` will be zipped into a file with `*.fcs` files and an `instrument_settings.csv` files. These will be exported from the instrument and uploaded to Aq through the operations interface. TA4 would then pull this zip file on an experiment-by-experiment basis using Trident.
+
+Comments: 0

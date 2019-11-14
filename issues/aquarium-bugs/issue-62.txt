@@ -1,0 +1,14 @@
+#62 It would be helpful to be able to "compare" previous versions of protocols (a la Git diff)
+By gasnew on 2017-07-26 16:56:53 UTC
+Labels: #<Sawyer::Resource:0x00005609f86bb0b8> #<Sawyer::Resource:0x00005609f86c6738>
+
+This would be essentially the same as the Git diff. This would include a few key features
+- Line numbers for current version and previous version
+- Lines removed and lines added from previous to current version
+- Author of the previous version (#31)
+
+I've been grappling with myself about whether to suggest moving our protocols to GitHub because I'm wary of us reinventing the wheel with our own version control scheme. Still, I think this feature is necessary, especially as we increase the size of the dev team.
+
+I believe this is the main version control feature we're missing that Git would provide us.
+
+Comments: 0

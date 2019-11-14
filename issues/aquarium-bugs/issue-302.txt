@@ -1,0 +1,13 @@
+#302 Bug Report: Item Provenance is Broken
+By jvrana on 2018-07-13 19:50:31 UTC
+Labels: #<Sawyer::Resource:0x0000555c48d58168>
+
+## Broken Item Provenance
+
+Now that restarting Operations is available through the designer interface, it is now easy to change input and output items for operations. The issue is that Jobs keep no easy to access record of what input and output items where actually used in the lab, which makes tracing where items came from very difficult. We cannot use the Operations and their Field Values to trace item history since FieldValues can change over time. The information may be somewhere in the job state but is extremely difficult to parse. 
+
+Additionally, because of the above, item history (in the item browser window) is broken since it only reveals the relationships an item has with the current Field Values, not the actual history of when the item was used in which jobs. I have already run into issues where it is very difficult to trace where a PCRs came from since I have restarted the operations with new items, which has made pinpointing failure difficult.
+
+Either Operations / Field Types should not be allowed to be changed after launching a plan (instead covertly copying the Operation + Field Values when someone 'restarts' an Operation in the designer and rewiring the new field values?) or we need to start collecting a log of field values states (including samples, sample properties, items) when a job starts and updating that log either at every protocol step or when the job ends.
+
+Comments: 0

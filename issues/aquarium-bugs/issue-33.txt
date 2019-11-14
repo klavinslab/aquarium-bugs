@@ -1,0 +1,14 @@
+#33 As a Researcher I want to be able to share plans and samples with groups so that I can work on collaborative projects
+By gasnew on 2017-07-14 21:20:09 UTC
+Labels: #<Sawyer::Resource:0x0000556b831fe818> #<Sawyer::Resource:0x0000556b831fd328>
+
+This would be nice for collaborating (particularly with someone working on the same project or with an undergrad assistant).
+
+Though, would we want limited permissions for this? Maybe a user can specify which other users can view their plans in their account preferences?
+
+Comments: 1
+--------
+From klavins on 2017-07-14 21:46:25 UTC
+
+Yeah, we could use groups. People also want to limit who can see their samples, so that could serve the same purpose.
+

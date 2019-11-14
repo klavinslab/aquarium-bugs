@@ -1,0 +1,9 @@
+#151 Operation Import Crashes when Sample Type Definition has no field types
+By jvrana on 2017-08-22 03:32:25 UTC
+Labels: #<Sawyer::Resource:0x0000555880e027d8> #<Sawyer::Resource:0x0000555880e002a8>
+
+If one of the sample type definitions in the exported JSON does not have any field types, import will error.
+
+Minrep: You can export "Minrep > Export Import Error" and try to import it to another server. The protocol contains "Reagent" as a sample type, which has no field types.
+
+Comments: 0

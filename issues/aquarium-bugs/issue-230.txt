@@ -1,0 +1,16 @@
+#230 As a Protocol Developer, I want to be able to use both nursery and production servers in the same domain 
+By bjkeller on 2017-09-19 00:24:11 UTC
+Labels: #<Sawyer::Resource:0x00005577efd99b50> #<Sawyer::Resource:0x00005577efda1b48>
+
+This is the unfinished portion of #193
+
+Protocol developers may need to use both nursery and production servers for a number of reasons, but need a server-specific version of the XSRF-TOKEN cookie. 
+
+I'm closing #193 and putting this in icebox for next round.
+
+Comments: 1
+--------
+From klavins on 2017-09-19 16:50:59 UTC
+
+We now have another problem, which is that if I have BIORAF/Manager open while using Nursery, then when BIOFAB/Manager auto updates, it messes with some cookie somewhere logging me out of Nursery. In fact, I keep having to log back into Nursery and it is not clear why. The cookies should not expire that fast.
+

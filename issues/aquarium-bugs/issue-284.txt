@@ -1,0 +1,14 @@
+#284 Bug in planner: Connecting wires does not propagate inputs/outputs in planner
+By emernic on 2018-02-28 17:20:44 UTC
+
+## Bug report
+
+- **Reproduce by:** 
+Create a plan, add two operations, specify inputs for one operation, connect the two operations.
+- **Expected:** Inputs/outputs are propagated through to the other operation based on routing.
+- **Actual:** Inputs/outputs are not propagated, and the i/o for the second operation remains blank (and circles remain orange). However, retyping the sample name for the first operation **will** cause samples to propagate along wires based on routing.
+- **Acceptance criteria:** Wiring two operations together causes inputs/outputs to propagate along wires based on routing.
+
+![error in planner](https://user-images.githubusercontent.com/11687588/36802063-b8e8bea4-1c81-11e8-8462-39f7685cb900.png)
+
+Comments: 0

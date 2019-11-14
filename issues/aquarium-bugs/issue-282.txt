@@ -1,0 +1,8 @@
+#282 Feature request: Ownership of individual items rather than by sample
+By emernic on 2018-02-26 22:15:39 UTC
+
+## Feature request
+
+**User story:** As an *end user*, I want to "own" items of a sample created by another person (with the ability to delete these items and add/remove associations). In general, it almost always makes sense to split ownership along the lines of physical items rather than samples. This allows, for example, two users to maintain their own stock of an enzyme or a common backbone.
+
+Comments: 0

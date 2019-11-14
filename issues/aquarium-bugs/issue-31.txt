@@ -1,0 +1,7 @@
+#31 As a Protocol Developer, I would like to see who saved what version of a protocol so that I can resolve conflicts, etc.
+By jvrana on 2017-07-14 19:36:38 UTC
+Labels: #<Sawyer::Resource:0x0000556b8321d380> #<Sawyer::Resource:0x0000556b8322be30>
+
+Right now the operation versions display the date and size. It would be nice to have who made the version change as well.
+
+Comments: 0

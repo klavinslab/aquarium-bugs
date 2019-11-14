@@ -1,0 +1,19 @@
+#76 Same item number submitted for two separate tasks.
+By cpc3 on 2017-07-31 22:22:22 UTC
+Labels: #<Sawyer::Resource:0x00005609f84fe888> #<Sawyer::Resource:0x00005609f850bf38> #<Sawyer::Resource:0x00005609f8512fb8>
+
+A user chose 1 comp cell aliquot for 2 digests so it told us to put both digests in one aliquot.  This shouldn't be able to happen.  There should be something that blocks this from being an option. 
+
+Comments: 2
+--------
+From cpc3 on 2017-08-10 21:41:58 UTC
+
+This just happened again and now we are having to abort the whole workflow and have the user resubmit because the technician put two digests into one comp cell aliquot so I'm making this critical. 
+
+--------
+From gasnew on 2017-08-31 20:43:14 UTC
+
+I'm making a temporary solution to this on the protocol level now, but this needs to be solved on the planner/Operation Type level. One solution we've discussed is to include a flag (check box) for Operation Type inputs--something like "Single-use item" or "Item consumed." If checked, the planner would reserve the item planned with that input for use exclusively with that operation.
+
+In the case of comp cell aliquots, we would check this box, but for many other items, such as E. coli and yeast plates, we'd leave it unchecked in most cases.
+

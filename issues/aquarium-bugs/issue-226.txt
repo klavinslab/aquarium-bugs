@@ -1,0 +1,97 @@
+#226 Nursery sign-in page doesn't work
+By Gamemackerel on 2017-09-18 02:02:38 UTC
+Labels: #<Sawyer::Resource:0x0000556c506a8ad0>
+
+I am unable to access the sign in page for nursery. Is this just me? Possibly caused by the fix for the cookie issue #193
+![Nursery.PNG](https://images.zenhubusercontent.com/59b9c56cb0222d5de477a650/b4b03b46-f458-4c7f-a878-371fad268dc6)
+
+Comments: 8
+--------
+From Gamemackerel on 2017-09-18 02:05:25 UTC
+
+Here's that error message:
+>angular.js:4987 Uncaught Error: [$injector:unpr] http://errors.angularjs.org/1.6.6/$injector/unpr?p0=aProvider%20%3C-%20a
+    at angular.js:88
+    at angular.js:4826
+    at Object.d [as get] (angular.js:4981)
+    at angular.js:4831
+    at d (angular.js:4981)
+    at e (angular.js:5006)
+    at Object.invoke (angular.js:5032)
+    at angular.js:4842
+    at p (angular.js:410)
+    at hb (angular.js:4842)
+
+--------
+From bjkeller on 2017-09-18 02:28:29 UTC
+
+It could be either one.
+
+Looks like I messed up an injector. 
+
+Changing the html tag of `aq2.html.erb` to 
+```
+<html ng-app='aquarium' ng-controller='layoutCtrl' ng-cloak style="overflow: hidden" ng-strict-di>
+```
+causes this to happen on local.
+
+--------
+From bjkeller on 2017-09-18 05:02:23 UTC
+
+ The problem was in the injector for the onbeforeunload handler.  The current version of master resolves this, but I'm having an issue with already having a new library in the db.  I'm not sure if this Is a real problem or not.
+
+--------
+From klavins on 2017-09-18 05:08:25 UTC
+
+Ben, The reason this doesn't work on nursery is because nursery uglifies the js. So you can't do
+
+  w.controller('codeCtrl', function (  $scope,   $http,   $attrs,   $cookies ) {
+     ...
+  });
+
+
+but have to do
+
+  w.controller('codeCtrl', [ '$scope', '$http', '$attrs', '$cookies', 
+                  function (  $scope,   $http,   $attrs,   $cookies ) {
+    ...
+  }]);
+
+--------
+From klavins on 2017-09-18 05:10:54 UTC
+
+Ah. I see you fixed it on master. I have pushed this code to nursery and am able to log in.
+
+--------
+From klavins on 2017-09-18 05:11:40 UTC
+
+What is this issue "having a new library in the db"?
+
+--------
+From bjkeller on 2017-09-18 12:28:19 UTC
+
+A library with the default name is already in the database, and so creating
+a new library fails.
+
+On Sun, Sep 17, 2017 at 10:12 PM Eric Klavins <notifications@github.com>
+wrote:
+
+> What is this issue "having a new library in the db"?
+>
+> —
+> You are receiving this because you were assigned.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/klavinslab/aquarium-bugs/issues/226#issuecomment-330130612>,
+> or mute the thread
+> <https://github.com/notifications/unsubscribe-auth/AFOdvQdMMLz3vPKpV7Iu7QUBHjf3ycdAks5sjfuNgaJpZM4PaXXw>
+> .
+>
+-- 
+Ben Keller
+bjkeller@uw.edu
+
+--------
+From bjkeller on 2017-09-18 19:56:23 UTC
+
+@Gamemackerel if this is working, please move it to done.
+

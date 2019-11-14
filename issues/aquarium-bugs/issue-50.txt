@@ -1,0 +1,7 @@
+#50 can't search for jobs by name in job logs 
+By ayeshasal on 2017-07-20 16:02:10 UTC
+Labels: #<Sawyer::Resource:0x0000556b8316b9c8> #<Sawyer::Resource:0x0000556b8316a4d8> #<Sawyer::Resource:0x0000556b83168fe8> #<Sawyer::Resource:0x0000556b83177a98>
+
+if you try to search for a specific job by name, e.g., "Upload Sequencing Results," the only results that show up are the jobs with "?" as the title. you can still search by username, though, so that still works. 
+
+Comments: 0

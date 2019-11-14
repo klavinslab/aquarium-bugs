@@ -1,0 +1,12 @@
+#199 Old plans cannot be loaded in new planner
+By bjkeller on 2017-09-12 20:22:40 UTC
+Labels: #<Sawyer::Resource:0x0000556c5094b5d0> #<Sawyer::Resource:0x0000556c5094a0e0>
+
+Existing system templates cannot be loaded though new ones can.
+
+Comments: 1
+--------
+From klavins on 2017-09-13 21:10:06 UTC
+
+Fixed at least for one case. There may be other cases though, so I'm leaving this open.
+

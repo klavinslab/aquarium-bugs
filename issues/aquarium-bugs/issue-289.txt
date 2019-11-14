@@ -1,0 +1,8 @@
+#289 Bug: Holding shift in the planner (to make wires) brings up the sample selection dropdown
+By emernic on 2018-03-21 04:33:26 UTC
+
+## Bug report
+
+Selecting a (green) node that already has a sample specified and then attempting to shift click to create a wire brings up the large sample selection window which covers most of the planner. This is the kind of bug that experienced users become blind to, but it is very frustrating for new users trying to submit a plan.
+
+Comments: 0

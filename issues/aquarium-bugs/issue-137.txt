@@ -1,0 +1,14 @@
+#137 Carosel shifting during protocol run
+By jvrana on 2017-08-15 01:47:37 UTC
+Labels: #<Sawyer::Resource:0x0000555880dd5558> #<Sawyer::Resource:0x0000555880de57a0>
+
+This has been brought up before, but I don't seem to see it in the issues.
+
+The protocol carousel gradually shifts as you progress through a protocol, forcing the technician to refresh the page eventually.
+
+This is particularly annoying for my protocols since the technician is using a projector and foot pedal and _cannot_ leave the biosafety cabinet during the middle of a protocol to click refresh.
+
+You can see the "OK" from the previous step creeping up in the following image.
+![screen shot 2017-08-14 at 6 44 47 pm](https://user-images.githubusercontent.com/10437900/29299061-f7e42b04-8120-11e7-9ce3-d48a358bf562.png)
+
+Comments: 0

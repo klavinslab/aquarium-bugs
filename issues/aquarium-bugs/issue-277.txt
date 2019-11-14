@@ -1,0 +1,22 @@
+#277 developer/technician, associations not fully working in **nursery**
+By segoldberg on 2018-02-13 18:45:12 UTC
+
+## Bug report
+
+- **Reproduce by:** nursery plan (user sarah, plan 86528 replan it)
+
+- **Expected:** production plan (user sarah1, plan 9629) 
+<img width="926" alt="image" src="https://user-images.githubusercontent.com/31996971/36167373-84721fa4-10aa-11e8-8f15-6a8129be24f4.png">
+
+- **Actual:** nursery plan (86528)
+1) number of uploads incorrect 
+<img width="635" alt="image" src="https://user-images.githubusercontent.com/31996971/36167486-e19b0d94-10aa-11e8-8ce0-c5e3eba16d7e.png">
+
+2) upload not associated correctly to input/output to item
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/31996971/36167302-37e4e838-10aa-11e8-9f25-bf80e9a1f43b.png">
+ 
+- **Acceptance criteria:** 
+1) no warning in uploads loop, as in production
+2) see associations to plan AND input/output items, as in production
+
+Comments: 0

@@ -1,0 +1,12 @@
+#72 Unable to scroll in job
+By jvrana on 2017-07-31 01:27:58 UTC
+Labels: #<Sawyer::Resource:0x00005609f85ae058> #<Sawyer::Resource:0x00005609f85ba0d8>
+
+If there are too many items displayed, technicians are unable to scroll down. There is no scroll bar and mouse scroll does not work.
+
+![screen shot 2017-07-30 at 6 26 41 pm](https://user-images.githubusercontent.com/10437900/28759651-b4e1459e-7554-11e7-948b-2964f42703d8.png)
+
+
+**MinRep:** Developer ⟩ Minrep ⟩ Large Table (unable to scroll down)
+
+Comments: 0

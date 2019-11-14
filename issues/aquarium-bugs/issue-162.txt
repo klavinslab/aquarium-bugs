@@ -1,0 +1,7 @@
+#162 As a Protocol Developer I would like the editor to have a "Save" keyboard shortcut
+By parkersruth on 2017-08-25 04:08:13 UTC
+Labels: #<Sawyer::Resource:0x000055588063e2e0> #<Sawyer::Resource:0x000055588063c8a0>
+
+While any editor is in focus, the cmd/ctrl-s mac keyboard shortcut should be bound to the save button.
+
+Comments: 0

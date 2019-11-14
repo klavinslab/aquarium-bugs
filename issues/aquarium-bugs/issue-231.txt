@@ -1,0 +1,19 @@
+#231 As a user, I want to be able to see the sample name for the item next to the "sequencing results" in planner so that I do not have to go and find the Plasmid name by opening a new tab. 
+By dvnstrcklnd on 2017-09-19 03:24:23 UTC
+Labels: #<Sawyer::Resource:0x00005577efd200c0>
+
+As a user, it is difficult to figure out which plasmid the sequence (ab1) file corresponds to. It appears that they only way to retrieve this information is to open up an new tab and search on item id. It would be nice if the plasmid name were indicated next to the sequence data download.
+
+Comments: 2
+--------
+From farheensal99 on 2017-09-20 22:03:46 UTC
+
+Can you provide a link to a page with the sequence file download?
+
+--------
+From dvnstrcklnd on 2017-09-20 22:52:26 UTC
+
+e.g.   2997: GG destination plasmids
+
+I can't provide a URL because I don't think the planner view supports that. I can show you tomorrow morning if you like.
+

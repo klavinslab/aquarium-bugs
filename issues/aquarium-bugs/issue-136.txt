@@ -1,0 +1,8 @@
+#136 Unable to delete input_array from operation input
+By jvrana on 2017-08-15 01:11:09 UTC
+Labels: #<Sawyer::Resource:0x0000555880e5f988> #<Sawyer::Resource:0x0000555880e692f8>
+
+You cannot downsize an input array of an operation. After clicking "Save" the input array will return to original size. See gif below:
+![inputarraybug](https://user-images.githubusercontent.com/10437900/29298323-c40cbce2-811b-11e7-9214-bf0764b9f9ca.gif)
+
+Comments: 0

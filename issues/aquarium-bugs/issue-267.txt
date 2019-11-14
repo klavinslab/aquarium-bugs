@@ -1,0 +1,14 @@
+#267 Bug: Drop down list of samples reverts to top of the list when editing a container
+By Delangeo on 2017-10-31 20:07:30 UTC
+
+
+## Bug report
+
+<!-- Give affected user and basic description in issue title -->
+
+- **Reproduce by:** *Creating a container with handler sample_container and choose a sample from the list. Save then go back in to edit.*
+- **Expected:** *Previously saved sample should still be the selected option from the dropdown menu*.
+- **Actual:** *reverts to top of the list so that if you then save without noticing your container is now assigned to that sample (primer in the production server database)*
+**Additional info:** May be part of a broader problem with drop down menus in Aquarium. Drop down menus in protocols created with a 'select' method always display the first object in the list instead of displaying the default as specified in the argument. 
+
+Comments: 0

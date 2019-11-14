@@ -1,0 +1,19 @@
+#52 It would be helpful to have a "recommended starting points" doc at the top of the Planner->Choose Goal page
+By gasnew on 2017-07-21 17:56:20 UTC
+Labels: #<Sawyer::Resource:0x0000556b83140ef8> #<Sawyer::Resource:0x0000556b8314f9a8>
+
+Users are frequently getting confused about where to start their plans, sometimes submitting a PCR without gel purification, for example. If we had a paragraph or so at the top of the Choose Goal page, we could make recommendations about common workflows. This could look something like:
+
+**Not sure where to start? Check out our recommended starting points to best utilize the power of the Planner!**
+- _**I want to build a Fragment**_. We recommend that you choose **Purify Gel Slice** under Cloning as a goal Operation. This will produce your desired Fragment Stock and will backpropagate through to Make PCR Fragment.
+- _**I want to build a Plasmid**_. We recommend that you choose **Make Glycerol Stock** under Cloning as a goal Operation. This will produce your desired Glycerol Stock and sequence-verified Plasmid Stock and will backpropagate through to Assemble Plasmid (Gibson Assembly).
+- _**I want to build a Yeast Strain**_. We recommend that you choose **Yeast Glycerol Stock** under Yeast as a goal Operation. This will produce your desired Yeast Glycerol Stock and will backpropagate through Yeast QC and to Plasmid Digest + Yeast Transformation. Note: It is usually best practice to include your transformation and QC workflows in the same plan. This should happen automatically (with the Auto button).
+
+Please direct your questions to [our Slack channel](https://join.slack.com/t/uwbiofab/signup). We'll do our best to respond in a timely manner. Happy cloning!
+
+Comments: 1
+--------
+From ayeshasal on 2017-09-12 21:53:28 UTC
+
+does having templates/modules sort of fix this issue? since we're probably also gonna have a video about how templates/modules work when we push the changes to production 
+

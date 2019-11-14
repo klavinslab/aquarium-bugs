@@ -1,0 +1,7 @@
+#138 Tabs in developer view. 
+By dvnstrcklnd on 2017-08-15 16:04:46 UTC
+Labels: #<Sawyer::Resource:0x0000555880d5dfd0> #<Sawyer::Resource:0x0000555880d6a7d0>
+
+It would be nice if the DEF, PROTOCOL, PRE... tabs stayed pinned while in the TEST tab in the same way that they do in the PROTOCOL tab.
+
+Comments: 0

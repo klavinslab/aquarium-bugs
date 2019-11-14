@@ -1,0 +1,7 @@
+#101 manually changing inventory location in DFP bug
+By mariellesummers on 2017-08-07 15:34:04 UTC
+Labels: #<Sawyer::Resource:0x00005609f7b0f610> #<Sawyer::Resource:0x00005609f7b0dc48>
+
+I'm trying to update the location of a plate from the 30 degree incubator to a real empty location in the DFP. I looked up an empty slot and tried to update using that slot, but it keeps telling me that I can't use that location because 30249 is in that location. (30249 was deleted in 2015). I tried a few more empty locations (according to the inventory) and got the same result with the same plate 30249 being in that spot. 
+
+Comments: 0

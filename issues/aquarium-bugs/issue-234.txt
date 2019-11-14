@@ -1,0 +1,19 @@
+#234 As a sequencing user, I want to be able to download my sequencing files in a way that I do not have to filter out files that don't belong to me
+By dvnstrcklnd on 2017-09-19 03:55:04 UTC
+Labels: #<Sawyer::Resource:0x00005577efbd1868>
+
+As a user, it isn't really useful to me to download a batch of sequencing files if they contain a bunch of sequences that don't belong to me. And even though none of the data is really secure yet, I don't like that the software downloads other users' data to my computer when I am trying to retrieve my own data.
+
+Comments: 2
+--------
+From dvnstrcklnd on 2017-09-19 15:15:27 UTC
+
+To clarify re the title, this capability already exists as long as you download the files one by one. However, it also gives an option to batch download, but this appears to download the zip file provided by GeneWiz, which contains many users sequences batched together. Thinking about it some more, the "security" aspect is probably more important than the convenience aspect: To the uninitiated user, the behavior seems buggy and insecure, and only achieves limited utility.
+
+However, there are a number of issues with this interface that are probably best taken together.
+
+--------
+From bjkeller on 2017-09-20 17:26:42 UTC
+
+The issue is that the zip file is the one provided by GeneWiz and not constructed for the user's samples.
+

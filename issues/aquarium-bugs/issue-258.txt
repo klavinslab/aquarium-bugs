@@ -1,0 +1,15 @@
+#258 Planner GUI issue: size of input array cannot be increased after plan has been saved
+By Gamemackerel on 2017-10-03 16:42:22 UTC
+Labels: #<Sawyer::Resource:0x00005577efdcc348> #<Sawyer::Resource:0x00005577efdd6de8>
+
+
+## Bug report
+
+array inputs don't work as expected if the plan with the array input operation has been already been saved. If an array input operation is in a saved plan, it becomes impossible to increase the amount of inputs for that array input operation.
+
+- **Reproduce by:** *Make new plan, place operation with single array input, save. Then add an array input and save again*
+- **Expected:** *The operation has 2 inputs*.
+- **Actual:** *The operation has 1 input*
+- **Acceptance criteria:** *you can save plans with array inputs and then later add elements to their input array*
+
+Comments: 0

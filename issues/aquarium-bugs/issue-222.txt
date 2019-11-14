@@ -1,0 +1,17 @@
+#222 Cannot link the input to an output within the same module
+By ayeshasal on 2017-09-15 19:01:27 UTC
+Labels: #<Sawyer::Resource:0x0000556c50774770> #<Sawyer::Resource:0x0000556c50783220> #<Sawyer::Resource:0x0000556c50781d30>
+
+this is relevant to yeast qc, where you want to link the input plate to the output (so, overall, the plan looks like this: qc --> overnight --> glycerol stock; qc takes in a plate, and we want the same plate to be an output, but none of the operations within qc (yeast lysate, PCR, fragment analyzing) output a plate, so i want to hook the input of the module to the output). 
+
+Comments: 2
+--------
+From klavins on 2017-09-15 21:11:01 UTC
+
+A workaround for now would be to give qc another output, the plate. Then take that output and route it to the output of the module.
+
+--------
+From ayeshasal on 2017-09-15 21:52:45 UTC
+
+yup that's what i'm doing right now, but i wanted to bring this up just in case there were cases in other workflows where this might be useful. if the yeast is the only place where this happens, though, it might not be worth fixing. 
+

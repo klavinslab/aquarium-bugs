@@ -1,0 +1,7 @@
+#159 Random Parameters Displayed in Test Tab Aren't Correct
+By parkersruth on 2017-08-25 03:57:35 UTC
+Labels: #<Sawyer::Resource:0x0000555880be2fc0> #<Sawyer::Resource:0x0000555880bf28f8>
+
+When random parameters are generated in the test tab, the displayed values do not match what is actually used in the code. Test Hydra Husbandry -> Electroporation for example.
+
+Comments: 0

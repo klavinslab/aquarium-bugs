@@ -1,0 +1,12 @@
+#93 Get rid of check plate and upload sequencing results
+By dyounger on 2017-08-04 21:19:25 UTC
+Labels: #<Sawyer::Resource:0x00005609f8576090>
+
+Can we just get rid of any time a user has to see "check plate" and "upload sequencing results?" All plates should be checked and all sequencing results should be uploaded. I feel like this is just adding a lot of confusion and makes plans needlessly more complicated. I am sure there are other places where this is also true.
+
+Comments: 1
+--------
+From klavins on 2017-08-07 22:32:47 UTC
+
+Would be resolved by having hierarchical plans.
+

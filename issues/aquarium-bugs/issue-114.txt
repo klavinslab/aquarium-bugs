@@ -1,0 +1,27 @@
+#114 Graphical Planner: Building operations 'upwards' doesn't faithfully keep object types
+By jvrana on 2017-08-08 16:29:32 UTC
+Labels: #<Sawyer::Resource:0x00005609f7960b98> #<Sawyer::Resource:0x00005609f7984638>
+
+If you build an operation upwards, the object type of the input of the new operation just defaults to the first allowable field type instead of the output object type of the operation you were building upon.
+Below, is an image which I put a "Trypsinize Plate" from a "Plate Cells."
+<img width="171" alt="screen shot 2017-08-08 at 9 11 08 am" src="https://user-images.githubusercontent.com/10437900/29082156-863437c6-7c19-11e7-8df7-829c20ecb2ee.png">
+
+The orange wires are very nifty though for indicating mismatches!
+
+Comments: 3
+--------
+From klavins on 2017-08-08 17:23:25 UTC
+
+Well, at least it highlighted the wire connecting the two inconsistent object types :-)
+
+--------
+From bjkeller on 2017-09-20 18:01:28 UTC
+
+@jvrana Can you confirm whether this is still an issue with new planner?
+
+--------
+From emernic on 2018-02-28 17:07:12 UTC
+
+Not super urgent since the arrow does show up orange, but this seems to still be an issue as of commit 0cf3253a5f6faad7859274278e4ead2b2516e994 @bjkeller 
+Noticed this bug with a user yesterday.
+

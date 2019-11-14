@@ -1,0 +1,12 @@
+#217 Protocol to add/edit lab equipment items
+By Delangeo on 2017-09-14 22:26:09 UTC
+Labels: #<Sawyer::Resource:0x0000556c50502820> #<Sawyer::Resource:0x0000556c505012e0> #<Sawyer::Resource:0x0000556c5051fdd0>
+
+It would be nice to make it easier to add non sample items into the inventory. 
+
+
+If lab managers keep track of the locations of lab equipment items in the inventory, then, instead of hard coding in the string location of a tool into a protocol, a user can be told to retrieve: Item.find_by_object_type_id( ObjectType.find_by_name("Tweezers")).location
+
+This way, protocols can be more portable to other labs with different equipment locations
+
+Comments: 0

@@ -1,0 +1,9 @@
+#274 Operation staging in planner
+By dvnstrcklnd on 2018-01-22 17:58:12 UTC
+Labels: #<Sawyer::Resource:0x0000555c48d529e8>
+
+As a researcher submitting complex plans, it would be useful to be able to specify which operations should happen concurrently. 
+
+Currently the order that operations are done in is managed by the Lab Manager's expectations. However, this breaks down when plans are structured in an unexpected way.
+
+Comments: 0

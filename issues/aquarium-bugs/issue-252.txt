@@ -1,0 +1,36 @@
+#252 Static input items in Operations type definition!
+By Gamemackerel on 2017-09-25 18:39:14 UTC
+Labels: #<Sawyer::Resource:0x00005577ef4be378> #<Sawyer::Resource:0x00005577ef51dd50>
+
+Many types of operations always involve a specific reagent, such as the cut smart buffer that is required to perform restriction digest operations. 
+Currently, this is what the developer has to do to automatically associate a static input with all the operations for an operation type:
+
+```
+  operations.each do |op|
+        input_name = "Cut Smart"
+        cut_smart_sample = Sample.find_by_name("Cut Smart")
+        cut_smart_container = ObjectType.find_by_name("Enzyme Buffer Stock")
+        op.add_input input_name, cut_smart_sample, cut_smart_container
+        op.input(input_name).set item: cut_smart_sample.in(cut_smart_container.name)[0]
+    end
+```
+
+An nice alternative could be an operations list method that encompasses the above loop
+
+```
+operations.add_static_input name, sample, container 
+```
+
+Which would lead nicely into built in static input functionality into the operation type definition, something that I think might make protocol development more intuitive for new developers.
+![static_input.JPG](https://images.zenhubusercontent.com/59b9c56cb0222d5de477a650/bcb7b36e-04e2-4846-9272-d3c1ab63b02c)
+
+Comments: 1
+--------
+From Gamemackerel on 2017-09-25 18:44:53 UTC
+
+Some examples of protocols where static inputs are used, and the code is hard to read as a result:
+
+Assemble Plasmid
+Make PCR
+Restriction Digest
+

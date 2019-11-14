@@ -1,0 +1,173 @@
+#294 Bug: More strange interactions between nodes of unconnected modules in planner
+By emernic on 2018-04-06 20:05:23 UTC
+
+## Bug report
+
+- **Reproduce by:** *Add in ~20 modules to a plan from templates.*
+- **Expected:** *Modules function independently unless connected by wires.*
+- **Actual:** *Nodes of separate modules are frequently linked (even between different modules). This occurs seemingly at random and has been observed in almost every plan where the user attempts to use many modules together.*
+- **Acceptance criteria:** *Modules function independently unless connected by wires.*
+
+![more weird planner bugs](https://user-images.githubusercontent.com/11687588/38441895-3df43afc-39b4-11e8-8b27-b0abd360f747.png)
+
+Comments: 7
+--------
+From bjkeller on 2018-04-06 20:12:10 UTC
+
+I think we really need to get you on trident...
+
+On Fri, Apr 6, 2018 at 1:05 PM, emernic <notifications@github.com> wrote:
+
+> Bug report
+>
+>    - *Reproduce by:* *Add in ~20 modules to a plan from templates.*
+>    - *Expected:* *Modules function independently unless connected by
+>    wires.*
+>    - *Actual:* *Nodes of separate modules are frequently linked (even
+>    between different modules). This occurs seemingly at random and has been
+>    observed in almost every plan where the user attempts to use many modules
+>    together.*
+>    - *Acceptance criteria:* *Modules function independently unless
+>    connected by wires.*
+>
+> [image: more weird planner bugs]
+> <https://user-images.githubusercontent.com/11687588/38441895-3df43afc-39b4-11e8-8b27-b0abd360f747.png>
+>
+> —
+> You are receiving this because you are subscribed to this thread.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/klavinslab/aquarium-bugs/issues/294>, or mute the
+> thread
+> <https://github.com/notifications/unsubscribe-auth/AFOdvWFiyAxuhRLIQRBc14BF0VxDcjOEks5tl8qEgaJpZM4TKoem>
+> .
+>
+
+
+
+-- 
+Ben Keller
+bjkeller@uw.edu
+
+--------
+From emernic on 2018-04-06 20:23:54 UTC
+
+@bjkeller Trident definitely would be helpful for dealing with plans that are impractical to assemble w/ drag and drop interface. Is it ready for this? I can download and try it out. However, I suspect that the vast majority of our day-to-day users are not going to want to use anything other than the GUI.
+
+--------
+From bjkeller on 2018-04-06 20:34:25 UTC
+
+Devin is using it to build complex plans including based on the puppeteer
+output you guys have sent. Though, I wont guarantee that you wont run into
+issues.
+
+If it is possible to hide some details, maybe you could construct a plan
+with trident and create a module to expose to users.
+
+Regardless of whether the graphical planner was perfect or not, I think
+these complex plans need a different way to indicate input.  We have at
+least one example of that locally.
+
+
+
+On Fri, Apr 6, 2018 at 1:23 PM, emernic <notifications@github.com> wrote:
+
+> @bjkeller <https://github.com/bjkeller> Trident definitely would be
+> helpful for dealing with plans that are impractical to assemble w/ drag and
+> drop interface. Is it ready for this? I can download and try it out.
+> However, I suspect that the vast majority of our day-to-day users are not
+> going to want to use anything other than the GUI.
+>
+> —
+> You are receiving this because you were mentioned.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/klavinslab/aquarium-bugs/issues/294#issuecomment-379366995>,
+> or mute the thread
+> <https://github.com/notifications/unsubscribe-auth/AFOdvd2eZf-OWEtt8rEarqLYOKU_YWEEks5tl87bgaJpZM4TKoem>
+> .
+>
+
+
+
+-- 
+Ben Keller
+bjkeller@uw.edu
+
+--------
+From emernic on 2018-04-06 20:59:07 UTC
+
+@bjkeller 
+> a different way to indicate input
+
+Not sure that I am understanding what you mean by this.
+
+We will need someone in our group with a working knowledge of Trident anyway, so I will try it out.
+
+--------
+From bjkeller on 2018-04-06 21:05:09 UTC
+
+It is not clear that it would be applicable in your case, but our local
+example would likely involve tabular input.  With the graphical planner, if
+the plan has repetitive structure it is easy to make mistakes.
+
+On Fri, Apr 6, 2018 at 1:59 PM, emernic <notifications@github.com> wrote:
+
+> @bjkeller <https://github.com/bjkeller>
+>
+> a different way to indicate input
+>
+> Not sure that I am understanding what you mean by this.
+>
+> We will need someone in our group with a working knowledge of Trident
+> anyway, so I will try it out.
+>
+> —
+> You are receiving this because you were mentioned.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/klavinslab/aquarium-bugs/issues/294#issuecomment-379376549>,
+> or mute the thread
+> <https://github.com/notifications/unsubscribe-auth/AFOdvVARLlhChtD7Ko_T5KRsznO0lgqlks5tl9cbgaJpZM4TKoem>
+> .
+>
+
+
+
+-- 
+Ben Keller
+bjkeller@uw.edu
+
+--------
+From emernic on 2018-04-06 22:09:46 UTC
+
+@bjkeller 
+I see. Yes, some way of reducing errors for large repetitive plans would be very helpful. However, it would be nice if we could get some of the bugs with the existing planner ironed out soon. Planner issues are the main remaining hurdle in convincing users to submit jobs to us. If these were fixed we could probably push the percentage of our building's cloning that goes through Aquarium from ~20% to ~70%.
+
+--------
+From bjkeller on 2018-04-06 22:14:36 UTC
+
+Understood.
+
+On Fri, Apr 6, 2018 at 3:09 PM, emernic <notifications@github.com> wrote:
+
+> @bjkeller <https://github.com/bjkeller>
+> I see. Yes, some way of reducing errors for large repetitive plans would
+> be very helpful. However, it would be nice if we could get some of the bugs
+> with the existing planner ironed out soon. Planner issues are the main
+> remaining hurdle in convincing users to submit jobs to us. If these were
+> fixed we could probably push the percentage of our building's cloning that
+> goes through Aquarium from ~20% to ~70%.
+>
+> —
+> You are receiving this because you were mentioned.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/klavinslab/aquarium-bugs/issues/294#issuecomment-379398274>,
+> or mute the thread
+> <https://github.com/notifications/unsubscribe-auth/AFOdvUv3xUo3G7ixjgBhvtF5oqUb9g7Kks5tl-eqgaJpZM4TKoem>
+> .
+>
+
+
+
+-- 
+Ben Keller
+bjkeller@uw.edu
+

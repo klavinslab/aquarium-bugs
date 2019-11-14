@@ -1,0 +1,12 @@
+#215 As a  researcher/manager, I want to be able to delete items that have been created in operations submitted by me even if the strain was created by another person. 
+By ayeshasal on 2017-09-14 19:11:10 UTC
+Labels: #<Sawyer::Resource:0x0000556c505fbab0> #<Sawyer::Resource:0x0000556c505f9530> #<Sawyer::Resource:0x0000556c5060af60>
+
+See plan 3342, operation 16462. User Joe Control created a bunch of items through operations but can't discard them because the samples are owned by David Younger. This comes down to the fact that items don't really have ownership -- only samples do. 
+
+Comments: 1
+--------
+From gasnew on 2017-09-14 19:49:15 UTC
+
+Admins can now delete anyone's items with the Discard List of Items operation, but your mentioned wrinkle still remains.
+

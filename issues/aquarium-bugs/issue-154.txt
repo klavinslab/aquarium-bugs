@@ -1,0 +1,7 @@
+#154 Convenience for printing things to JS Console for debugging operation types
+By jvrana on 2017-08-22 18:30:07 UTC
+Labels: #<Sawyer::Resource:0x0000555880d18c50> #<Sawyer::Resource:0x0000555880d27638>
+
+It would be really useful to be able to print things within a protocol to the javascript console so we can prettify the debugging code and be able to view objects through the console.
+
+Comments: 0

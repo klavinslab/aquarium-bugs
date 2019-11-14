@@ -1,0 +1,12 @@
+#180 As a workflow developer, I want to able to hide the navigation sidebar when coding so that I can use more of the screen to do my work
+By Gamemackerel on 2017-09-06 16:32:25 UTC
+Labels: #<Sawyer::Resource:0x0000555880e3c690> #<Sawyer::Resource:0x0000555880e47130>
+
+It would be nice to have an option to hide the file navigator sidebar for full screen protocol developing.
+
+
+
+
+
+
+Comments: 0

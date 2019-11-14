@@ -1,0 +1,39 @@
+#211 Planner GUI glitch: Problematic 'x' button next to templates
+By Gamemackerel on 2017-09-13 21:29:29 UTC
+Labels: #<Sawyer::Resource:0x0000556c506c9d98> #<Sawyer::Resource:0x0000556c506d7ab0>
+
+The x button next to templates intuitively seems to just be for deleting a template, but what it actually does is simultaneously delete the template and open the just deleted template as a newly saved plan. This functionality works great for removing a faulty template from the list, editing it as a plan, and then making it a template again, but it can have problems for an unaware user attempting to edit their template.
+
+With an existing faulty plan that I wanted to edit, here are the intuitive steps I took to achieve loss of work:
+
+- add faulty template to my plan
+
+- modify template till it is perfect and fixed
+
+- now I use x button to delete the old faulty template from template list because I now have a better version in my planner that I am about to add to the list
+
+- the x button pulls the faulty template into a new plan, and my current unsaved plan which contained my modified template disappears forever
+
+Perhaps I am not the brightest bulb... but I did the above steps multiple times while editing templates before I understood what the button actually did
+
+<hr>
+I see a couple ways that the interface can be improved for template editing:
+
+
+Make the x button *only* remove the template from the list
+Or
+Keep the "revert to plan" functionality, but just add the template to saved plans without getting rid of current unsaved work
+And/Or
+Make it more clear what the button is doing by adding a more detailed tooltip and changing it from an x to a down arrow. 
+
+Comments: 2
+--------
+From Gamemackerel on 2017-09-13 21:55:08 UTC
+
+Oh I guess the main Issue is that usually when you are about to change plans there is a popup which asks you to save first: not so with the x button next to templates
+
+--------
+From klavins on 2017-09-13 23:11:24 UTC
+
+Ok, changed the behavior of this so that there is a dialog and so that it doesn't replace the current plan.
+

@@ -1,0 +1,8 @@
+#280 As a manager/researcher I would like to be able to delete samples from the Aquarium web interface
+By emernic on 2018-02-24 06:28:02 UTC
+
+## Feature request
+
+**User story:** As a *manager/researcher*, I would like to have the option to delete samples to avoid confusion caused by the persistence of unused/incorrect samples. I understand the _idea_ behind never deleting samples, but this is not always practical. For example, we have two different samples "T4 DNA Ligase Buffer (10X)" and "T4 DNA Ligase Buffer (10x)". Being unable to delete one of these creates confusion. A feature available to administrators to delete (or hide) samples would be extremely helpful.
+
+Comments: 0

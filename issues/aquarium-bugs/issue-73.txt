@@ -1,0 +1,16 @@
+#73 Weird Step Merging with wide tables or elements
+By jvrana on 2017-07-31 01:30:08 UTC
+Labels: #<Sawyer::Resource:0x00005609f856f5b0> #<Sawyer::Resource:0x00005609f856d878>
+
+If a table or other display element is wider than the current window, weird merging of previous steps occurs. This occurs if there is a table that's wider than the window screen, which is something that can happen on smaller monitors or larger tables.
+
+I don't have a min rep, but if you take any protocol and make the window small you can see the effects:
+
+![screen shot 2017-07-30 at 6 27 36 pm](https://user-images.githubusercontent.com/10437900/28759684-08fea22a-7555-11e7-9cce-82d04e9428a1.png)
+
+Comments: 1
+--------
+From klavins on 2017-08-01 03:33:01 UTC
+
+That qualifies as a min rep.
+

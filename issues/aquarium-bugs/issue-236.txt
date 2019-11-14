@@ -1,0 +1,11 @@
+#236 Get SSL certificate
+By bjkeller on 2017-09-19 16:06:06 UTC
+
+Needed to make site HTTPS
+
+Comments: 1
+--------
+From klavins on 2017-09-19 16:46:01 UTC
+
+We can do this through AWS. There is some sysadmin needed, but probably could do this by taking Aquarium down for a few hours one evening.
+

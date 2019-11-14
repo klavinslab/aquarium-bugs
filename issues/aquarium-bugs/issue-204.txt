@@ -1,0 +1,21 @@
+#204 Planner UI Glitch: Can't specify item type from module input
+By Gamemackerel on 2017-09-12 23:03:31 UTC
+Labels: #<Sawyer::Resource:0x0000556c507f52f8> #<Sawyer::Resource:0x0000556c507ffdc0>
+
+I'm not sure if this counts as a major issue or not, because it has a fairly simple workaround and we don't have any module templates yet that are severely hurt by the glitch.
+ 
+When a user selects inputs for a operation with variable input item type, they are able to select which object/sample combination that they will use as an input item using the pink checkboxes, like for the integrant in Plasmid Digest + Yeast Transformation shown below:
+![input_items_nomodule](https://user-images.githubusercontent.com/3107677/30351860-3c6cda88-97d2-11e7-8a4c-774315acd0e9.PNG)
+
+However, if this same operation is contained inside of a module, the user can no longer specify what item type to choose for that input without going into the module and changing the item type of the operation-input that the module-input wires to.
+(the checkboxes do not show the selected item type nor do they respond to clicking)
+![input_items_module](https://user-images.githubusercontent.com/3107677/30351959-9277f458-97d2-11e7-8f3a-51c210e7d18e.PNG)
+
+This issue affects inputs and outputs of modules the same.
+
+Comments: 1
+--------
+From klavins on 2017-09-13 20:56:07 UTC
+
+Fixed!
+

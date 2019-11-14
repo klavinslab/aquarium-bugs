@@ -1,0 +1,9 @@
+#146 As a Protocol Developer I would like to have a different color scheme for the nursery server so that I can more easily distinguish it from the production server
+By jvrana on 2017-08-17 17:49:13 UTC
+Labels: #<Sawyer::Resource:0x00005558806205d8> #<Sawyer::Resource:0x000055588063d048>
+
+There's been a few close calls of me almost accidentally deleting something on production since the Nursery server and Production server look identical (besides the small text below "AQUARIUM" on the left hand side).
+
+I'd be nice to have a different color for the nursery server.
+
+Comments: 0

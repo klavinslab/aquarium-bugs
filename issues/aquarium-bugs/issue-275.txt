@@ -1,0 +1,7 @@
+#275 Names for module inputs
+By dvnstrcklnd on 2018-01-22 18:10:32 UTC
+Labels: #<Sawyer::Resource:0x0000555c48d08988>
+
+As a researcher developing modules, it would be nice if inputs and outputs could be differentiated with module-specific names, such as "Propagation media," "Induction media," "Low protease," or "High protease." The current implementation that just uses the sample type is insufficient and I usually have to open up the module to remember what's going on. This is also complicated by the fact that the order of inputs and outputs changes uncontrollably as the module is edited.
+
+Comments: 0
