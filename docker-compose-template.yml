@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  script:
+    environment:
+      GITHUB_USER: blah_user
+      GITHUB_TOKEN: blah_token
+    volumes:
+      - ./issues:/script/issues
